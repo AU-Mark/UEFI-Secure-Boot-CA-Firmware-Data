@@ -1,0 +1,1292 @@
+﻿{
+    "Vendor":  "HP",
+    "LastUpdated":  "2025-12-05T02:35:19Z",
+    "SourceUrl":  "https://support.hp.com/us-en/document/ish_13070353-13070429-16",
+    "RecordCount":  321,
+    "Data":  [
+                 {
+                     "Model":  "HP 250R 15.6 inch G9",
+                     "MinFirmwareVersion":  "F.14"
+                 },
+                 {
+                     "Model":  "HP 256R 15.6 inch G9",
+                     "MinFirmwareVersion":  "F.14"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1a 14 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1a 14 inch Next Gen AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1a 16 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1ah 14 inch",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1ah 16 inch",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1i 13 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1i 14 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1i 16 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1iR 14 inch",
+                     "MinFirmwareVersion":  "01.02.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 6 G1iR 16 inch",
+                     "MinFirmwareVersion":  "01.02.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 Flip G1i 13 inch AI",
+                     "MinFirmwareVersion":  "01.02.05"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1a 13 inch AI",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1a 13 inch Next Gen AI",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1a 14 inch AI",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1a 14 inch Next Gen AI",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1a 16 inch AI",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1a 16 inch Next Gen AI",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1i 13 inch AI",
+                     "MinFirmwareVersion":  "01.02.05"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1i 14 inch AI",
+                     "MinFirmwareVersion":  "01.02.05"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1i 14 inch Next Gen AI",
+                     "MinFirmwareVersion":  "01.02.04"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1i 16 inch AI",
+                     "MinFirmwareVersion":  "01.02.05"
+                 },
+                 {
+                     "Model":  "HP EliteBook 8 G1i 16 inch Next Gen AI",
+                     "MinFirmwareVersion":  "01.02.04"
+                 },
+                 {
+                     "Model":  "HP EliteBook X Flip G1i 14 AI",
+                     "MinFirmwareVersion":  "01.02.23"
+                 },
+                 {
+                     "Model":  "HP EliteBook X G1a 14 inch Next Gen AI",
+                     "MinFirmwareVersion":  "01.03.11"
+                 },
+                 {
+                     "Model":  "HP EliteBook X G1i 14 AI",
+                     "MinFirmwareVersion":  "01.02.23"
+                 },
+                 {
+                     "Model":  "HP Fortis Flip G1i 11 inch",
+                     "MinFirmwareVersion":  "01.01.40"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1a 14 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1a 16 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1ah 14 inch",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1ah 16 inch",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1i 14 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1i 16 inch AI",
+                     "MinFirmwareVersion":  "01.02.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1iR 14 inch (H)",
+                     "MinFirmwareVersion":  "01.02.02"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1iR 14 inch (U)",
+                     "MinFirmwareVersion":  "01.02.02"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1iR 16 inch (H)",
+                     "MinFirmwareVersion":  "01.02.02"
+                 },
+                 {
+                     "Model":  "HP ProBook 4 G1iR 16 inch (U)",
+                     "MinFirmwareVersion":  "01.02.02"
+                 },
+                 {
+                     "Model":  "HP ZBook 8 G1ak 14 inch",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP ZBook 8 G1as 14 inch",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP Elite x360 1040 14 inch G11 2-in-1",
+                     "MinFirmwareVersion":  "01.07.00"
+                 },
+                 {
+                     "Model":  "HP Elite x360 830 13 inch G11 2-in-1",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 1040 14 inch G11",
+                     "MinFirmwareVersion":  "01.07.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 630 13.3 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 640 14 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 645 14 inch G11",
+                     "MinFirmwareVersion":  "01.06.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 660 16 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 665 16 inch G11",
+                     "MinFirmwareVersion":  "01.06.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 13 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 835 13 inch G11",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 835 13 inch G11 AI",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 14 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 845 14 inch G11",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 845 14 inch G11 AI",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 860 16 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP EliteBook 865 16 inch G11",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 865 16 inch G11 AI",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP Pro x360 Fortis 11 inch G11",
+                     "MinFirmwareVersion":  "01.12.00"
+                 },
+                 {
+                     "Model":  "HP Pro x360 Fortis 11 inch G11",
+                     "MinFirmwareVersion":  "01.12.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 14 inch G11",
+                     "MinFirmwareVersion":  "01.07.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 16 inch G11",
+                     "MinFirmwareVersion":  "01.07.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 445 14 inch G11",
+                     "MinFirmwareVersion":  "01.06.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 465 16 inch G11",
+                     "MinFirmwareVersion":  "01.06.01"
+                 },
+                 {
+                     "Model":  "HP Dragonfly 13.5 inch G4",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP Elite x360 1040 14 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP Elite x360 830 13 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 1040 14 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 630 13.3 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 640 14 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 645 14 inch G10",
+                     "MinFirmwareVersion":  "01.11.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 650 15.6 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 655 15.6 inch G10",
+                     "MinFirmwareVersion":  "01.11.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 13 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 835 13 inch G10",
+                     "MinFirmwareVersion":  "01.10.03"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 14 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 860 16 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP Pro x360 435 13.3 inch G10",
+                     "MinFirmwareVersion":  "01.11.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 14 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 445 14 inch G10",
+                     "MinFirmwareVersion":  "01.11.01"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 15.6 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 455 15.6 inch G10",
+                     "MinFirmwareVersion":  "01.11.01"
+                 },
+                 {
+                     "Model":  "HP Dragonfly Folio 13.5 inch G3",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP Elite Dragonfly 13.5 inch G3",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP Elite x360 1040 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP Elite x360 830 13 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 1040 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 630 13 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 640 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 640 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 645 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 645 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 650 15.6 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 650 15.6 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 655 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 655 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 13 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 835 13 inch G9",
+                     "MinFirmwareVersion":  "01.14.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 845 14 inch G9",
+                     "MinFirmwareVersion":  "01.14.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 855 16 inch G9",
+                     "MinFirmwareVersion":  "01.14.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 860 16 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP EliteBook 860 16 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP Pro x360 435 G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP Pro x360 Fortis 11 inch G10",
+                     "MinFirmwareVersion":  "01.15.01"
+                 },
+                 {
+                     "Model":  "HP Pro x360 Fortis 11 inch G9",
+                     "MinFirmwareVersion":  "01.15.00"
+                 },
+                 {
+                     "Model":  "HP Pro x360 Fortis 11 inch G9",
+                     "MinFirmwareVersion":  "01.15.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 445 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 445 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 455 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 455 14 inch G9",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP ProBook Fortis 14 inch G10",
+                     "MinFirmwareVersion":  "01.15.01"
+                 },
+                 {
+                     "Model":  "HP ProBook Fortis 14 inch G9",
+                     "MinFirmwareVersion":  "01.15.00"
+                 },
+                 {
+                     "Model":  "HP ProBook Fortis 14 inch G9",
+                     "MinFirmwareVersion":  "01.15.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro 14 inch G5",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro 14 inch G5",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro A 14 inch G5",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP Elite Dragonfly G2",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Elite Dragonfly Max",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 835 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 Aero G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 845 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 850 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 855 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook x360 1040 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook x360 830 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 430 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 430 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 430 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 445 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 445 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 455 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 455 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 630 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 630 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 635 Aero G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 640 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 640 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 650 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 650 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook x360 11 inch G7 Education Edition",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook x360 435 G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro 14 G4",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro 14 G4",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro A 14 G4",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro A 14 G4",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 835 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 845 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 850 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 855 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook x360 830 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 635 Aero G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 640 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 650 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook x360 11 G5 Education Edition",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook x360 11 G6 Education Edition",
+                     "MinFirmwareVersion":  "01.23.00"
+                 },
+                 {
+                     "Model":  "HP ProBook x360 435 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 15 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Elite X2 G4",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 735 G6",
+                     "MinFirmwareVersion":  "01.32.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 745 G6",
+                     "MinFirmwareVersion":  "01.32.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 830 G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 840 G6 Healthcare Edition",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 846 G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 846 G6 Healthcare Edition",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook 850 G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook x360 1030 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook x360 1040 G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP EliteBook x360 1040 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 430 G7",
+                     "MinFirmwareVersion":  "01.26.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 440 G7",
+                     "MinFirmwareVersion":  "01.26.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 445 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 450 G7",
+                     "MinFirmwareVersion":  "01.26.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 455 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 640 G5",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP ProBook 650 G5",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP Zhan 66 Pro A 14 G3",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP EliteDesk 8 Mini G1i AI",
+                     "MinFirmwareVersion":  "02.02.03"
+                 },
+                 {
+                     "Model":  "HP EliteDesk 8 SFF G1i AI",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP EliteDesk 8 Tower G1i AI",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP EliteDesk 8 Tower G1i E AI",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP EliteStudio 8 G1i 23.8 inch AI",
+                     "MinFirmwareVersion":  "02.02.03"
+                 },
+                 {
+                     "Model":  "HP EliteStudio 8 G1i 27 inch AI",
+                     "MinFirmwareVersion":  "02.02.03"
+                 },
+                 {
+                     "Model":  "HP ProDesk 4 Mini G1i AI",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP ProDesk 4 SFF G1i AI",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP ProDesk 4 Tower G1i AI",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP ProDesk 4 Tower G1i E AI",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP ProStudio 4 G1i 23.8 inch AI",
+                     "MinFirmwareVersion":  "02.02.00"
+                 },
+                 {
+                     "Model":  "HP Elite SFF 805 G9",
+                     "MinFirmwareVersion":  "02.13.00"
+                 },
+                 {
+                     "Model":  "HP Elite Mini 600 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Elite SFF 600 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Elite SFF 800 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Elite Tower 600 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Elite Tower 680 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Elite Tower 800 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Elite Tower 880 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP EliteOne 840 23.8 inch G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP EliteOne 870 27.8 inch G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Mini Conferencing with Microsoft Teams Rooms",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Mini Conferencing with Zoom Rooms",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Mini IP Conferencing with Microsoft Teams Rooms",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Presence 24 with Zoom Rooms",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Presence 27 with Zoom Rooms",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Pro Mini 260 G9",
+                     "MinFirmwareVersion":  "02.21.00"
+                 },
+                 {
+                     "Model":  "HP Pro Mini 400 G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Pro Tower 400 G9 PCI",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Pro Tower 480 G9 PCI",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP ProOne 440 23.8 inch G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Z1 G9 Tower",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP Zhan 99 Pro 23.8 inch G9",
+                     "MinFirmwareVersion":  "02.19.01"
+                 },
+                 {
+                     "Model":  "HP ZBook 8 G1ah 14 inch",
+                     "MinFirmwareVersion":  "01.03.03"
+                 },
+                 {
+                     "Model":  "HP ZBook 8 G1i 14 inch",
+                     "MinFirmwareVersion":  "01.02.05"
+                 },
+                 {
+                     "Model":  "HP ZBook 8 G1i 16 inch",
+                     "MinFirmwareVersion":  "01.02.05"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 inch G11 A",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 16 inch G11",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury 16 G11",
+                     "MinFirmwareVersion":  "01.03.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury 16 G11",
+                     "MinFirmwareVersion":  "01.03.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury G1i 16 inch",
+                     "MinFirmwareVersion":  "01.01.18"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury G1i 18 inch",
+                     "MinFirmwareVersion":  "01.01.18"
+                 },
+                 {
+                     "Model":  "HP ZBook Power 16 inch G11",
+                     "MinFirmwareVersion":  "01.07.01"
+                 },
+                 {
+                     "Model":  "HP ZBook Power 16 inch G11 A",
+                     "MinFirmwareVersion":  "01.08.01"
+                 },
+                 {
+                     "Model":  "HP ZBook Studio 16 inch G11",
+                     "MinFirmwareVersion":  "01.05.03"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 16 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury 16 G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Power 15.6 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Power 15.6 inch G10 A",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Studio 16 inch G10",
+                     "MinFirmwareVersion":  "01.10.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 16 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 16 inch G9",
+                     "MinFirmwareVersion":  "01.16.01"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury 16 G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Power 15.6 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Studio 16 inch G9",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 inch G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 inch G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 15.6 inch G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury 15.6 inch G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury 17.3 inch G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Power 15.6 inch G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Studio 15.6 inch G8",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Firefly 14 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Power G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook 14U G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP ZBook 15 G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP ZBook 17 G6",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Create G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Fury 15 G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP ZBook Studio G7",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Z1 Tower G1i",
+                     "MinFirmwareVersion":  "02.02.02"
+                 },
+                 {
+                     "Model":  "HP Z2 Mini G1a",
+                     "MinFirmwareVersion":  "01.02.03"
+                 },
+                 {
+                     "Model":  "HP Z2 Mini G1i",
+                     "MinFirmwareVersion":  "01.07.01"
+                 },
+                 {
+                     "Model":  "HP Z2 SFF G1i",
+                     "MinFirmwareVersion":  "01.07.01"
+                 },
+                 {
+                     "Model":  "HP Z2 Tower G1i",
+                     "MinFirmwareVersion":  "01.07.02"
+                 },
+                 {
+                     "Model":  "HP Z2 Mini G9",
+                     "MinFirmwareVersion":  "03.05.01"
+                 },
+                 {
+                     "Model":  "HP Z2 SFF G9",
+                     "MinFirmwareVersion":  "03.05.01"
+                 },
+                 {
+                     "Model":  "HP Z2 Tower G9",
+                     "MinFirmwareVersion":  "03.05.01"
+                 },
+                 {
+                     "Model":  "HP Z4 G5",
+                     "MinFirmwareVersion":  "01.02.30"
+                 },
+                 {
+                     "Model":  "HP Z4 Rack G5",
+                     "MinFirmwareVersion":  "01.02.27"
+                 },
+                 {
+                     "Model":  "HP Z6 G5 A",
+                     "MinFirmwareVersion":  "01.02.05"
+                 },
+                 {
+                     "Model":  "HP Z6 G6",
+                     "MinFirmwareVersion":  "01.02.30"
+                 },
+                 {
+                     "Model":  "HP Z8 Fury G5",
+                     "MinFirmwareVersion":  "01.02.30"
+                 },
+                 {
+                     "Model":  "HP Z8 G5",
+                     "MinFirmwareVersion":  "01.02.29"
+                 },
+                 {
+                     "Model":  "HP Z2 G8 SFF",
+                     "MinFirmwareVersion":  "01.06.12"
+                 },
+                 {
+                     "Model":  "HP Z2 G8 Tower",
+                     "MinFirmwareVersion":  "01.06.12"
+                 },
+                 {
+                     "Model":  "HP Z2 Mini G5",
+                     "MinFirmwareVersion":  "01.04.20"
+                 },
+                 {
+                     "Model":  "HP Z2 SFF G5",
+                     "MinFirmwareVersion":  "01.04.20"
+                 },
+                 {
+                     "Model":  "HP Z2 SFF G5",
+                     "MinFirmwareVersion":  "01.04.20"
+                 },
+                 {
+                     "Model":  "HP Z2 Tower G5",
+                     "MinFirmwareVersion":  "01.04.20"
+                 },
+                 {
+                     "Model":  "HP Z2 Mini G4",
+                     "MinFirmwareVersion":  "01.08.13"
+                 },
+                 {
+                     "Model":  "HP Z2 SFF G4",
+                     "MinFirmwareVersion":  "01.08.13"
+                 },
+                 {
+                     "Model":  "HP Z2 Tower G4",
+                     "MinFirmwareVersion":  "01.08.13"
+                 },
+                 {
+                     "Model":  "HP Engage Flex Mini G2 Retail System",
+                     "MinFirmwareVersion":  "02.02.03"
+                 },
+                 {
+                     "Model":  "HP Engage One Pro 15.6 G2 System",
+                     "MinFirmwareVersion":  "02.03.01"
+                 },
+                 {
+                     "Model":  "HP Engage One Pro 19.5 G2 System",
+                     "MinFirmwareVersion":  "02.03.01"
+                 },
+                 {
+                     "Model":  "HP Engage One Pro 23.8 G2 System",
+                     "MinFirmwareVersion":  "02.03.01"
+                 },
+                 {
+                     "Model":  "HP Engage Flex Pro G2 Retail System",
+                     "MinFirmwareVersion":  "02.09.10"
+                 },
+                 {
+                     "Model":  "HP Engage Flex Pro-C G2 Retail System",
+                     "MinFirmwareVersion":  "02.09.10"
+                 },
+                 {
+                     "Model":  "HP Engage Go 10 Mobile System",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Engage Go 13.5 inch Mobile System",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP Engage Go Mobile System",
+                     "MinFirmwareVersion":  "01.33.00"
+                 },
+                 {
+                     "Model":  "HP Elite mt645 G8 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP Elite t660 Thin Client",
+                     "MinFirmwareVersion":  "01.06.00"
+                 },
+                 {
+                     "Model":  "HP Elite t755 Thin Client",
+                     "MinFirmwareVersion":  "01.07.00"
+                 },
+                 {
+                     "Model":  "HP Elite mt645 G7 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP Elite mt645 G7 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.20.00"
+                 },
+                 {
+                     "Model":  "HP Elite t655 Thin Client",
+                     "MinFirmwareVersion":  "01.13.00"
+                 },
+                 {
+                     "Model":  "HP Pro mt440 G3 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP Pro mt440 G3 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.16.00"
+                 },
+                 {
+                     "Model":  "HP Pro t550 Thin Client",
+                     "MinFirmwareVersion":  "01.11.00"
+                 },
+                 {
+                     "Model":  "HP tz655 Trusted Zero Client",
+                     "MinFirmwareVersion":  "01.13.00"
+                 },
+                 {
+                     "Model":  "HP mt32 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP mt46 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.22.00"
+                 },
+                 {
+                     "Model":  "HP mt22 Mobile Thin Clinet",
+                     "MinFirmwareVersion":  "01.26.00"
+                 },
+                 {
+                     "Model":  "HP mt45 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.32.00"
+                 },
+                 {
+                     "Model":  "HP mt31 Mobile Thin Client",
+                     "MinFirmwareVersion":  "01.33.00"
+                 }
+             ]
+}
