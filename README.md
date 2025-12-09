@@ -1,6 +1,6 @@
-# Secure Boot Certificate Data
+# Secure Boot Certificate Firmware Data
 
-[![Update Secure Boot Data](https://github.com/AU-Mark/UEFI-CA-2023-Workstation-Support/actions/workflows/update-data.yml/badge.svg)](https://github.com/AU-Mark/UEFI-CA-2023-Workstation-Support/actions/workflows/update-data.yml)
+[![Update Secure Boot Certificate Firmware Data](https://github.com/AU-Mark/UEFI-CA-2023-Workstation-Support/actions/workflows/update-data.yml/badge.svg)](https://github.com/AU-Mark/UEFI-CA-2023-Workstation-Support/actions/workflows/update-data.yml)
 
 Automated collection of UEFI Secure Boot 2023 certificate minimum firmware versions from Dell and HP.
 
