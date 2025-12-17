@@ -1,8 +1,8 @@
 {
   "Vendor": "Dell",
-  "LastUpdated": "2025-12-16T06:25:10Z",
+  "LastUpdated": "2025-12-17T06:24:43Z",
   "SourceUrl": "https://www.dell.com/support/kbdoc/en-us/000347876/microsoft-2011-secure-boot-certificate-expiration",
-  "RecordCount": 366,
+  "RecordCount": 436,
   "Data": [
     {
       "Model": "Alienware 16 Area-51 AA16250",
@@ -29,16 +29,28 @@
       "MinFirmwareVersion": "1.8.1"
     },
     {
-      "Model": "Alienware m15 R6",
-      "MinFirmwareVersion": "1.40.0"
+      "Model": "Alienware Aurora R13",
+      "MinFirmwareVersion": "1.29.0"
+    },
+    {
+      "Model": "Alienware Aurora R15",
+      "MinFirmwareVersion": "1.25.1"
     },
     {
       "Model": "Alienware Aurora R15 AMD",
       "MinFirmwareVersion": "1.21.0"
     },
     {
+      "Model": "Alienware Aurora R16",
+      "MinFirmwareVersion": "2.21.1"
+    },
+    {
       "Model": "Alienware Aurora Ryzen Edition R14",
       "MinFirmwareVersion": "2.27.1"
+    },
+    {
+      "Model": "Alienware m15 R6",
+      "MinFirmwareVersion": "1.40.0"
     },
     {
       "Model": "Alienware m15 R7",
@@ -47,6 +59,10 @@
     {
       "Model": "Alienware m15 R7 AMD",
       "MinFirmwareVersion": "1.24.0"
+    },
+    {
+      "Model": "Alienware m15 Ryzen Edition R5",
+      "MinFirmwareVersion": "1.29.1"
     },
     {
       "Model": "Alienware m16 R1",
@@ -77,12 +93,20 @@
       "MinFirmwareVersion": "1.17.1"
     },
     {
+      "Model": "Alienware x14",
+      "MinFirmwareVersion": "1.29.0"
+    },
+    {
       "Model": "Alienware x14 R2",
       "MinFirmwareVersion": "1.26.1"
     },
     {
       "Model": "Alienware x15 R1",
       "MinFirmwareVersion": "1.31.1"
+    },
+    {
+      "Model": "Alienware x15 R2",
+      "MinFirmwareVersion": "1.30.0"
     },
     {
       "Model": "Alienware x16 R1",
@@ -95,6 +119,10 @@
     {
       "Model": "Alienware x17 R1",
       "MinFirmwareVersion": "1.31.1"
+    },
+    {
+      "Model": "Alienware x17 R2",
+      "MinFirmwareVersion": "1.30.0"
     },
     {
       "Model": "ChengMing 3900",
@@ -243,6 +271,10 @@
     {
       "Model": "Dell Pro 14 Essential PV14250",
       "MinFirmwareVersion": "1.1.1"
+    },
+    {
+      "Model": "Dell Pro 14 Essential PV14255",
+      "MinFirmwareVersion": "1.5.0"
     },
     {
       "Model": "Dell Pro 14 PC14250",
@@ -425,6 +457,14 @@
       "MinFirmwareVersion": "1.25.1"
     },
     {
+      "Model": "Inspiron 14 3420",
+      "MinFirmwareVersion": "1.0.14"
+    },
+    {
+      "Model": "Inspiron 14 5410 2-in-1",
+      "MinFirmwareVersion": "2.36.0"
+    },
+    {
       "Model": "Inspiron 14 5420",
       "MinFirmwareVersion": "1.31.0"
     },
@@ -451,6 +491,10 @@
     {
       "Model": "Inspiron 14 5445",
       "MinFirmwareVersion": "1.13.1"
+    },
+    {
+      "Model": "Inspiron 14 7420 2-in-1",
+      "MinFirmwareVersion": "1.30.1"
     },
     {
       "Model": "Inspiron 14 7425 2-in-1",
@@ -489,6 +533,10 @@
       "MinFirmwareVersion": "1.17.1"
     },
     {
+      "Model": "Inspiron 15 3510",
+      "MinFirmwareVersion": "1.28.0"
+    },
+    {
       "Model": "Inspiron 15 3511",
       "MinFirmwareVersion": "1.40.0"
     },
@@ -497,12 +545,24 @@
       "MinFirmwareVersion": "1.35.0"
     },
     {
+      "Model": "Inspiron 15 3521",
+      "MinFirmwareVersion": "1.23.0"
+    },
+    {
+      "Model": "Inspiron 15 3525",
+      "MinFirmwareVersion": "1.31.1"
+    },
+    {
       "Model": "Inspiron 15 3530",
       "MinFirmwareVersion": "1.23.2"
     },
     {
       "Model": "Inspiron 15 3535",
       "MinFirmwareVersion": "1.24.1"
+    },
+    {
+      "Model": "Inspiron 15 5510/5518",
+      "MinFirmwareVersion": "2.37.0"
     },
     {
       "Model": "Inspiron 16 5620",
@@ -529,12 +589,20 @@
       "MinFirmwareVersion": "1.14.2"
     },
     {
+      "Model": "Inspiron 16 7620 2-in-1",
+      "MinFirmwareVersion": "1.30.1"
+    },
+    {
       "Model": "Inspiron 16 7630 2-in-1",
       "MinFirmwareVersion": "1.24.1"
     },
     {
       "Model": "Inspiron 16 7635 2-in-1",
       "MinFirmwareVersion": "1.18.0"
+    },
+    {
+      "Model": "Inspiron 16 7640 2-in-1",
+      "MinFirmwareVersion": "1.16.0"
     },
     {
       "Model": "Inspiron 16 Plus 7620",
@@ -589,6 +657,14 @@
       "MinFirmwareVersion": "1.41.0"
     },
     {
+      "Model": "Inspiron 3502",
+      "MinFirmwareVersion": "1.25.0"
+    },
+    {
+      "Model": "Inspiron 3501",
+      "MinFirmwareVersion": "1.41.0"
+    },
+    {
       "Model": "Inspiron 3910",
       "MinFirmwareVersion": "1.34.1"
     },
@@ -605,8 +681,16 @@
       "MinFirmwareVersion": "1.32.1"
     },
     {
-      "Model": "Inspiron 7415 2-in-1",
+      "Model": "Inspiron 5415",
       "MinFirmwareVersion": "1.30.0"
+    },
+    {
+      "Model": "Inspiron 5515",
+      "MinFirmwareVersion": "1.30.0"
+    },
+    {
+      "Model": "Inspiron 7415 2-in-1",
+      "MinFirmwareVersion": "1.31.0"
     },
     {
       "Model": "Inspiron 7700 All-In-One",
@@ -669,6 +753,14 @@
       "MinFirmwareVersion": "1.30.0"
     },
     {
+      "Model": "Latitude 3320",
+      "MinFirmwareVersion": "1.40.0"
+    },
+    {
+      "Model": "Latitude 3330",
+      "MinFirmwareVersion": "1.32.1"
+    },
+    {
       "Model": "Latitude 3340",
       "MinFirmwareVersion": "1.25.1"
     },
@@ -683,6 +775,10 @@
     {
       "Model": "Latitude 3420",
       "MinFirmwareVersion": "1.44.0"
+    },
+    {
+      "Model": "Latitude 3430",
+      "MinFirmwareVersion": "1.30.1"
     },
     {
       "Model": "Latitude 3440",
@@ -703,6 +799,10 @@
     {
       "Model": "Latitude 3520",
       "MinFirmwareVersion": "1.44.0"
+    },
+    {
+      "Model": "Latitude 3530",
+      "MinFirmwareVersion": "1.30.1"
     },
     {
       "Model": "Latitude 3540",
@@ -733,6 +833,10 @@
       "MinFirmwareVersion": "1.46.0"
     },
     {
+      "Model": "Latitude 5330",
+      "MinFirmwareVersion": "1.32.1"
+    },
+    {
       "Model": "Latitude 5340",
       "MinFirmwareVersion": "1.24.1"
     },
@@ -755,6 +859,10 @@
     {
       "Model": "Latitude 5411",
       "MinFirmwareVersion": "1.39.1"
+    },
+    {
+      "Model": "Latitude 5420",
+      "MinFirmwareVersion": "1.49.0"
     },
     {
       "Model": "Latitude 5420 Rugged",
@@ -813,6 +921,18 @@
       "MinFirmwareVersion": "1.46.0"
     },
     {
+      "Model": "Latitude 5521",
+      "MinFirmwareVersion": "1.39.0"
+    },
+    {
+      "Model": "Latitude 5530",
+      "MinFirmwareVersion": "1.32.1"
+    },
+    {
+      "Model": "Latitude 5531",
+      "MinFirmwareVersion": "1.32.1"
+    },
+    {
       "Model": "Latitude 5540",
       "MinFirmwareVersion": "1.24.1"
     },
@@ -853,6 +973,10 @@
       "MinFirmwareVersion": "1.41.1"
     },
     {
+      "Model": "Latitude 7320",
+      "MinFirmwareVersion": "1.46.0"
+    },
+    {
       "Model": "Latitude 7320 Detachable",
       "MinFirmwareVersion": "1.43.0"
     },
@@ -889,6 +1013,10 @@
       "MinFirmwareVersion": "1.41.1"
     },
     {
+      "Model": "Latitude 7420",
+      "MinFirmwareVersion": "1.46.0"
+    },
+    {
       "Model": "Latitude 7424 Rugged Extreme",
       "MinFirmwareVersion": "1.40.0"
     },
@@ -907,6 +1035,10 @@
     {
       "Model": "Latitude 7455",
       "MinFirmwareVersion": "2.11.0"
+    },
+    {
+      "Model": "Latitude 7520",
+      "MinFirmwareVersion": "1.46.0"
     },
     {
       "Model": "Latitude 7530",
@@ -949,8 +1081,16 @@
       "MinFirmwareVersion": "1.38.0"
     },
     {
+      "Model": "Latitude 9520",
+      "MinFirmwareVersion": "1.43.0"
+    },
+    {
       "Model": "Latitude Rugged 7220EX",
       "MinFirmwareVersion": "1.48.0"
+    },
+    {
+      "Model": "OptiPlex 3000 Micro / OptiPlex 3000 Small Form Factor / OptiPlex 3000 Tower",
+      "MinFirmwareVersion": "1.34.1"
     },
     {
       "Model": "OptiPlex 3000 Thin Client",
@@ -989,12 +1129,24 @@
       "MinFirmwareVersion": "1.33.0"
     },
     {
+      "Model": "OptiPlex 5090 Micro / OptiPlex 5090 Small Form Factor / OptiPlex 5090 Tower",
+      "MinFirmwareVersion": "1.37.0"
+    },
+    {
       "Model": "OptiPlex 5270 All-in-One",
       "MinFirmwareVersion": "1.40.0"
     },
     {
+      "Model": "OptiPlex 5400 All-In-One",
+      "MinFirmwareVersion": "1.1.53"
+    },
+    {
       "Model": "OptiPlex 5480 All-in-One",
       "MinFirmwareVersion": "1.42.0"
+    },
+    {
+      "Model": "OptiPlex 5490 All-In-One",
+      "MinFirmwareVersion": "1.43.0"
     },
     {
       "Model": "OptiPlex 7000 Micro",
@@ -1021,12 +1173,24 @@
       "MinFirmwareVersion": "1.33.0"
     },
     {
+      "Model": "OptiPlex 7071",
+      "MinFirmwareVersion": "1.35.0"
+    },
+    {
+      "Model": "OptiPlex 7080",
+      "MinFirmwareVersion": "1.36.0"
+    },
+    {
       "Model": "OptiPlex 7090 Tower",
       "MinFirmwareVersion": "1.37.0"
     },
     {
       "Model": "OptiPlex 7090 Ultra",
       "MinFirmwareVersion": "1.38.0"
+    },
+    {
+      "Model": "OptiPlex 7400 All-In-One",
+      "MinFirmwareVersion": "1.1.53"
     },
     {
       "Model": "OptiPlex 7470 All-in-One",
@@ -1037,12 +1201,48 @@
       "MinFirmwareVersion": "1.42.0"
     },
     {
+      "Model": "OptiPlex 7490 All-In-One",
+      "MinFirmwareVersion": "1.43.0"
+    },
+    {
       "Model": "OptiPlex 7770 All-in-One",
       "MinFirmwareVersion": "1.40.0"
     },
     {
       "Model": "OptiPlex 7780 All-in-One",
       "MinFirmwareVersion": "1.42.0"
+    },
+    {
+      "Model": "OptiPlex AIO 7420",
+      "MinFirmwareVersion": "1.20.0"
+    },
+    {
+      "Model": "OptiPlex All-in-One 7410",
+      "MinFirmwareVersion": "1.30.0"
+    },
+    {
+      "Model": "OptiPlex Micro 7010 / OptiPlex Micro Plus 7010",
+      "MinFirmwareVersion": "1.30.0"
+    },
+    {
+      "Model": "OptiPlex Micro 7020",
+      "MinFirmwareVersion": "1.20.0"
+    },
+    {
+      "Model": "OptiPlex SFF 7020",
+      "MinFirmwareVersion": "1.20.0"
+    },
+    {
+      "Model": "OptiPlex Small Form Factor 7010 / OptiPlex Small Form Factor Plus 7010",
+      "MinFirmwareVersion": "1.30.0"
+    },
+    {
+      "Model": "OptiPlex Tower 7010 / OptiPlex Tower Plus 7010",
+      "MinFirmwareVersion": "1.30.0"
+    },
+    {
+      "Model": "OptiPlex Tower 7020",
+      "MinFirmwareVersion": "1.20.0"
     },
     {
       "Model": "OptiPlex XE3",
@@ -1059,6 +1259,14 @@
     {
       "Model": "Precision 3260 Compact",
       "MinFirmwareVersion": "3.18.3"
+    },
+    {
+      "Model": "Precision 3430 Tower",
+      "MinFirmwareVersion": "1.37.0"
+    },
+    {
+      "Model": "Precision 3431 Tower",
+      "MinFirmwareVersion": "1.36.0"
     },
     {
       "Model": "Precision 3440",
@@ -1109,6 +1317,18 @@
       "MinFirmwareVersion": "1.46.0"
     },
     {
+      "Model": "Precision 3561",
+      "MinFirmwareVersion": "1.39.0"
+    },
+    {
+      "Model": "Precision 3570",
+      "MinFirmwareVersion": "1.32.1"
+    },
+    {
+      "Model": "Precision 3571",
+      "MinFirmwareVersion": "1.32.1"
+    },
+    {
       "Model": "Precision 3580",
       "MinFirmwareVersion": "1.24.1"
     },
@@ -1131,6 +1351,10 @@
     {
       "Model": "Precision 3640",
       "MinFirmwareVersion": "1.41.0"
+    },
+    {
+      "Model": "Precision 3650 Tower",
+      "MinFirmwareVersion": "1.44.0"
     },
     {
       "Model": "Precision 3660",
@@ -1193,6 +1417,10 @@
       "MinFirmwareVersion": "1.35.0"
     },
     {
+      "Model": "Precision 5820 Tower",
+      "MinFirmwareVersion": "2.46.0"
+    },
+    {
       "Model": "Precision 5860 Tower",
       "MinFirmwareVersion": "3.1.1"
     },
@@ -1237,12 +1465,20 @@
       "MinFirmwareVersion": "1.23.6"
     },
     {
+      "Model": "Precision 7820 Tower",
+      "MinFirmwareVersion": "2.50.0"
+    },
+    {
       "Model": "Precision 7865 Tower",
       "MinFirmwareVersion": "1.21.1"
     },
     {
       "Model": "Precision 7875 Tower",
       "MinFirmwareVersion": "2.2.1"
+    },
+    {
+      "Model": "Precision 7920 Tower",
+      "MinFirmwareVersion": "2.50.0"
     },
     {
       "Model": "Precision 7960 Tower",
@@ -1285,6 +1521,10 @@
       "MinFirmwareVersion": "1.35.0"
     },
     {
+      "Model": "Vostro 14 3425",
+      "MinFirmwareVersion": "1.31.1"
+    },
+    {
       "Model": "Vostro 14 3430",
       "MinFirmwareVersion": "1.23.2"
     },
@@ -1297,16 +1537,36 @@
       "MinFirmwareVersion": "1.15.1"
     },
     {
+      "Model": "Vostro 14 5410",
+      "MinFirmwareVersion": "2.37.0"
+    },
+    {
       "Model": "Vostro 15 3510",
       "MinFirmwareVersion": "1.40.0"
+    },
+    {
+      "Model": "Vostro 15 3515",
+      "MinFirmwareVersion": "1.36.1"
     },
     {
       "Model": "Vostro 15 3520",
       "MinFirmwareVersion": "1.35.0"
     },
     {
+      "Model": "Vostro 15 3525",
+      "MinFirmwareVersion": "1.31.1"
+    },
+    {
       "Model": "Vostro 15 3530",
       "MinFirmwareVersion": "1.23.2"
+    },
+    {
+      "Model": "Vostro 15 3535",
+      "MinFirmwareVersion": "1.24.1"
+    },
+    {
+      "Model": "Vostro 15 5510",
+      "MinFirmwareVersion": "2.37.0"
     },
     {
       "Model": "Vostro 16 5630",
@@ -1345,6 +1605,10 @@
       "MinFirmwareVersion": "1.41.0"
     },
     {
+      "Model": "Vostro 3405",
+      "MinFirmwareVersion": "1.35.1"
+    },
+    {
       "Model": "Vostro 3500",
       "MinFirmwareVersion": "1.41.0"
     },
@@ -1371,6 +1635,14 @@
     {
       "Model": "Vostro 5320",
       "MinFirmwareVersion": "1.28.0"
+    },
+    {
+      "Model": "Vostro 5415",
+      "MinFirmwareVersion": "1.30.0"
+    },
+    {
+      "Model": "Vostro 5515",
+      "MinFirmwareVersion": "1.30.0"
     },
     {
       "Model": "Vostro 5620",
@@ -1459,6 +1731,14 @@
     {
       "Model": "XPS 17 9730",
       "MinFirmwareVersion": "1.22.1"
+    },
+    {
+      "Model": "XPS 8950",
+      "MinFirmwareVersion": "1.29.0"
+    },
+    {
+      "Model": "XPS 8960",
+      "MinFirmwareVersion": "2.20.1"
     },
     {
       "Model": "XPS 9315 2-in-1",
