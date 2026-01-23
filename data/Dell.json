@@ -1,8 +1,8 @@
 {
   "Vendor": "Dell",
-  "LastUpdated": "2026-01-22T06:26:58Z",
+  "LastUpdated": "2026-01-23T06:26:47Z",
   "SourceUrl": "https://www.dell.com/support/kbdoc/en-us/000347876/microsoft-2011-secure-boot-certificate-expiration",
-  "RecordCount": 436,
+  "RecordCount": 447,
   "Data": [
     {
       "Model": "Alienware 16 Area-51 AA16250",
@@ -21,8 +21,16 @@
       "MinFirmwareVersion": "1.7.0"
     },
     {
+      "Model": "Alienware Area 51m R2",
+      "MinFirmwareVersion": "1.35.0"
+    },
+    {
       "Model": "Alienware Area-51 AAT2250",
       "MinFirmwareVersion": "1.9.1"
+    },
+    {
+      "Model": "Alienware Area-51 AAT2265",
+      "MinFirmwareVersion": "1.0.0"
     },
     {
       "Model": "Alienware Aurora ACT1250",
@@ -47,6 +55,10 @@
     {
       "Model": "Alienware Aurora Ryzen Edition R14",
       "MinFirmwareVersion": "2.27.1"
+    },
+    {
+      "Model": "Alienware m15 R3",
+      "MinFirmwareVersion": "1.35.0"
     },
     {
       "Model": "Alienware m15 R6",
@@ -75,6 +87,10 @@
     {
       "Model": "Alienware m16 R2",
       "MinFirmwareVersion": "1.15.0"
+    },
+    {
+      "Model": "Alienware m17 R3",
+      "MinFirmwareVersion": "1.35.0"
     },
     {
       "Model": "Alienware m17 R5 AMD",
@@ -249,12 +265,20 @@
       "MinFirmwareVersion": "1.24.0"
     },
     {
+      "Model": "Dell G15 5530",
+      "MinFirmwareVersion": "1.28.1"
+    },
+    {
       "Model": "Dell G15 5535",
       "MinFirmwareVersion": "1.16.0"
     },
     {
       "Model": "Dell G16 7620",
       "MinFirmwareVersion": "1.35.0"
+    },
+    {
+      "Model": "Dell G16 7630",
+      "MinFirmwareVersion": "1.28.1"
     },
     {
       "Model": "Dell Pro 13 Plus PB13250",
@@ -395,6 +419,10 @@
     {
       "Model": "Dell Pro Micro QCM1250",
       "MinFirmwareVersion": "1.7.0"
+    },
+    {
+      "Model": "Dell Pro Micro QCT1255",
+      "MinFirmwareVersion": "1.4.2"
     },
     {
       "Model": "Dell Pro Micro Plus QBM1250",
@@ -539,6 +567,10 @@
     {
       "Model": "Inspiron 15 3511",
       "MinFirmwareVersion": "1.40.0"
+    },
+    {
+      "Model": "Inspiron 15 3515",
+      "MinFirmwareVersion": "1.36.1"
     },
     {
       "Model": "Inspiron 15 3520",
@@ -1249,6 +1281,14 @@
       "MinFirmwareVersion": "1.38.0"
     },
     {
+      "Model": "OptiPlex XE4 SFF",
+      "MinFirmwareVersion": "1.33.2"
+    },
+    {
+      "Model": "OptiPlex XE4 Tower",
+      "MinFirmwareVersion": "1.33.2"
+    },
+    {
       "Model": "Precision 3240 Compact",
       "MinFirmwareVersion": "1.38.0"
     },
@@ -1259,6 +1299,10 @@
     {
       "Model": "Precision 3260 Compact",
       "MinFirmwareVersion": "3.18.3"
+    },
+    {
+      "Model": "Precision 3280 CFF",
+      "MinFirmwareVersion": "1.16.2"
     },
     {
       "Model": "Precision 3430 Tower",
