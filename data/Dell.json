@@ -1,8 +1,8 @@
 {
   "Vendor": "Dell",
-  "LastUpdated": "2026-02-17T06:52:03Z",
+  "LastUpdated": "2026-02-18T06:57:20Z",
   "SourceUrl": "https://www.dell.com/support/kbdoc/en-us/000347876/microsoft-2011-secure-boot-certificate-expiration",
-  "RecordCount": 447,
+  "RecordCount": 451,
   "Data": [
     {
       "Model": "Alienware 16 Area-51 AA16250",
@@ -1525,8 +1525,24 @@
       "MinFirmwareVersion": "2.50.0"
     },
     {
+      "Model": "Precision 7920 Rack",
+      "MinFirmwareVersion": "2.25.1"
+    },
+    {
+      "Model": "Precision 7920 XL Rack",
+      "MinFirmwareVersion": "2.25.1"
+    },
+    {
       "Model": "Precision 7960 Tower",
       "MinFirmwareVersion": "2.13.1"
+    },
+    {
+      "Model": "Precision 7960 Rack",
+      "MinFirmwareVersion": "2.8.3"
+    },
+    {
+      "Model": "Precision 7960 XL Rack",
+      "MinFirmwareVersion": "2.8.3"
     },
     {
       "Model": "Vostro 3020 Small Desktop",
