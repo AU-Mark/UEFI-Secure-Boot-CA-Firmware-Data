@@ -138,6 +138,20 @@ jobs:
             $valid = $false
           }
 
+          # Check DellOutOfScope.json (supplementary - warn only, does NOT gate the commit
+          # of the primary lists; the consumer falls back to regex if it is missing)
+          $dellOosPath = "data/DellOutOfScope.json"
+          if (Test-Path $dellOosPath) {
+            $dellOos = Get-Content $dellOosPath | ConvertFrom-Json
+            if ($dellOos.RecordCount -gt 50) {
+              Write-Host "DellOutOfScope.json valid: $($dellOos.RecordCount) models"
+            } else {
+              Write-Warning "DellOutOfScope.json has too few models: $($dellOos.RecordCount)"
+            }
+          } else {
+            Write-Warning "DellOutOfScope.json not found (consumer will use regex fallback)"
+          }
+
           # Check for changes
           $gitStatus = git status --porcelain
           if ($gitStatus) {

@@ -618,6 +618,65 @@ function Get-LenovoDataSelenium {
     }
 }
 
+# --- Dell out-of-scope list (KB 000378734) --------------------------------
+# Dell publishes an explicit list of platforms with NO planned BIOS update for
+# the 2023 certificates. The models are in HTML table cells (one model per <td>,
+# grouped under <strong> family headers); Dell's product-picker widget uses bare
+# family names with no model identifier, which are excluded. The page 403s for a
+# bare User-Agent, so Accept headers are sent (Invoke-WebRequest defaults work in
+# CI, but the headers make it robust).
+
+function Get-DellOutOfScopeData {
+    <#
+    .SYNOPSIS
+        Fetches Dell's out-of-scope (no planned BIOS update) model list.
+    .OUTPUTS
+        Sorted string[] of model names, or $null on failure.
+    #>
+    param([string]$Url)
+
+    Write-Host "[Dell-OOS] Fetching out-of-scope list..." -ForegroundColor Cyan
+    Write-Host "[Dell-OOS] URL: $Url" -ForegroundColor Gray
+
+    $userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+    $headers = @{
+        'Accept'          = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+        'Accept-Language' = 'en-US,en;q=0.9'
+    }
+
+    try {
+        $response = Invoke-WebRequest -Uri $Url -UseBasicParsing -UserAgent $userAgent -Headers $headers -TimeoutSec 60
+        Write-Host "[Dell-OOS] Response: $($response.StatusCode)" -ForegroundColor Green
+
+        $html = $response.Content
+        $html = [regex]::Replace($html, '(?is)<script.*?</script>', ' ')
+        $html = [regex]::Replace($html, '(?is)<style.*?</style>', ' ')
+
+        # A model cell starts with a Dell product family followed by an identifier.
+        $familyPattern = '^(Dell\s+)?(OptiPlex|Latitude|Precision|Vostro|Inspiron|XPS|Embedded|Wyse|Chromebook|Venue|Tablet)\b'
+        # Bare family labels (Dell's product picker / section headers) are not models.
+        $bareFamilies = @('Latitude', 'OptiPlex', 'Precision', 'Vostro', 'Inspiron', 'XPS', 'Embedded Box PC', 'Dell')
+
+        $set = New-Object 'System.Collections.Generic.HashSet[string]' ([System.StringComparer]::OrdinalIgnoreCase)
+        foreach ($m in [regex]::Matches($html, '(?is)<td[^>]*>(.*?)</td>')) {
+            $text = [regex]::Replace($m.Groups[1].Value, '(?s)<[^>]+>', ' ')
+            $text = [System.Net.WebUtility]::HtmlDecode($text)
+            $text = ($text -replace '\s+', ' ').Trim()
+            if ($text -and ($text -match $familyPattern) -and ($bareFamilies -notcontains $text)) {
+                $null = $set.Add($text)
+            }
+        }
+
+        $models = @($set | Sort-Object)
+        Write-Host "[Dell-OOS] Extracted $($models.Count) out-of-scope models" -ForegroundColor Green
+        return ,$models
+
+    } catch {
+        Write-Error "[Dell-OOS] Failed to fetch out-of-scope data: $_"
+        return $null
+    }
+}
+
 #endregion
 
 #region Main Execution
@@ -633,6 +692,7 @@ $results = @{
     Dell = $null
     HP = $null
     Lenovo = $null
+    DellOutOfScope = $null
 }
 
 # Fetch Dell data
@@ -655,6 +715,28 @@ if (-not $SkipDell) {
         $results.Dell = $dellData.Count
     } else {
         Write-Warning "[Dell] No data extracted"
+    }
+
+    # Fetch Dell out-of-scope list (supplementary - drives NotCapable detection)
+    $dellOosUrl = 'https://www.dell.com/support/kbdoc/en-us/000378734/microsoft-2011-secure-boot-certificates-expiration-for-out-of-scope-platforms-for-bios-updates'
+    $dellOos = Get-DellOutOfScopeData -Url $dellOosUrl
+
+    if ($dellOos -and $dellOos.Count -gt 0) {
+        $dellOosJson = [PSCustomObject]@{
+            Vendor = "Dell"
+            ListType = "OutOfScope"
+            LastUpdated = $timestamp
+            SourceUrl = $dellOosUrl
+            RecordCount = $dellOos.Count
+            Models = $dellOos
+        }
+
+        $dellOosPath = Join-Path $OutputPath "DellOutOfScope.json"
+        $dellOosJson | ConvertTo-Json -Depth 10 | Out-File -FilePath $dellOosPath -Encoding UTF8
+        Write-Host "[Dell-OOS] Saved to: $dellOosPath" -ForegroundColor Green
+        $results.DellOutOfScope = $dellOos.Count
+    } else {
+        Write-Warning "[Dell-OOS] No out-of-scope data extracted"
     }
 }
 
@@ -714,6 +796,7 @@ Write-Host "Summary:" -ForegroundColor Cyan
 Write-Host "  Dell records: $(if ($results.Dell) { $results.Dell } else { 'FAILED' })" -ForegroundColor $(if ($results.Dell) { 'Green' } else { 'Red' })
 Write-Host "  HP records: $(if ($results.HP) { $results.HP } else { 'FAILED' })" -ForegroundColor $(if ($results.HP) { 'Green' } else { 'Red' })
 Write-Host "  Lenovo records: $(if ($results.Lenovo) { $results.Lenovo } else { 'FAILED' })" -ForegroundColor $(if ($results.Lenovo) { 'Green' } else { 'Red' })
+Write-Host "  Dell out-of-scope: $(if ($results.DellOutOfScope) { $results.DellOutOfScope } else { 'FAILED' })" -ForegroundColor $(if ($results.DellOutOfScope) { 'Green' } else { 'Yellow' })
 Write-Host "========================================" -ForegroundColor Cyan
 
 # Return success/failure for CI/CD

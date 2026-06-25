@@ -18,6 +18,7 @@ Automated collection of UEFI Secure Boot 2023 certificate minimum firmware versi
 | `data/Dell.json` | Dell platforms and minimum BIOS versions |
 | `data/HP.json` | HP platforms and minimum BIOS versions |
 | `data/Lenovo.json` | Lenovo platforms and minimum BIOS versions |
+| `data/DellOutOfScope.json` | Dell models with NO planned BIOS update (out of scope, KB 000378734) |
 
 ## JSON Schema
 
@@ -35,6 +36,20 @@ All vendors share the same flat schema:
       "MinFirmwareVersion": "R16ET45W (v1.31)"
     }
   ]
+}
+```
+
+`DellOutOfScope.json` is a list of models Dell will NOT update, so it has no
+firmware versions - a flat `Models` array instead of `Data`:
+
+```json
+{
+  "Vendor": "Dell",
+  "ListType": "OutOfScope",
+  "LastUpdated": "2026-06-25T19:50:08Z",
+  "SourceUrl": "https://www.dell.com/support/kbdoc/en-us/000378734/...",
+  "RecordCount": 408,
+  "Models": [ "OptiPlex 9010", "Latitude E6420", "Inspiron 15 3567" ]
 }
 ```
 
