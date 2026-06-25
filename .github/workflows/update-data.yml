@@ -123,6 +123,21 @@ jobs:
             $valid = $false
           }
 
+          # Check Lenovo.json
+          $lenovoPath = "data/Lenovo.json"
+          if (Test-Path $lenovoPath) {
+            $lenovo = Get-Content $lenovoPath | ConvertFrom-Json
+            if ($lenovo.RecordCount -gt 100) {
+              Write-Host "Lenovo.json valid: $($lenovo.RecordCount) records"
+            } else {
+              Write-Warning "Lenovo.json has too few records: $($lenovo.RecordCount)"
+              $valid = $false
+            }
+          } else {
+            Write-Warning "Lenovo.json not found"
+            $valid = $false
+          }
+
           # Check for changes
           $gitStatus = git status --porcelain
           if ($gitStatus) {

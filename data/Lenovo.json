@@ -1,0 +1,1988 @@
+{
+  "Vendor": "Lenovo",
+  "LastUpdated": "2026-06-25T18:40:35Z",
+  "SourceUrl": "https://support.lenovo.com/us/en/solutions/ht518129",
+  "RecordCount": 495,
+  "Data": [
+    {
+      "Model": "ThinkPad 11e 5th Gen",
+      "MinFirmwareVersion": "R1DET31W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad 11e Yoga Gen 6",
+      "MinFirmwareVersion": "R18ET34W (v1.18)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 1",
+      "MinFirmwareVersion": "R16ET45W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 2",
+      "MinFirmwareVersion": "R1EET63W (v1.63)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 2",
+      "MinFirmwareVersion": "R1AET55W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 3 AMD",
+      "MinFirmwareVersion": "R1OET45W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 4",
+      "MinFirmwareVersion": "R1SET62W (v1.33)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 4 AMD",
+      "MinFirmwareVersion": "R20ET40W (v1.20)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 5",
+      "MinFirmwareVersion": "R2AET61W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 5 AMD",
+      "MinFirmwareVersion": "R2CET40W (v1.22)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 6",
+      "MinFirmwareVersion": "R2JET39W (v1.16)"
+    },
+    {
+      "Model": "ThinkPad E14 Gen 6 AMD",
+      "MinFirmwareVersion": "R2KET29W (v1.12)"
+    },
+    {
+      "Model": "ThinkPad E15 Gen 1",
+      "MinFirmwareVersion": "R16ET45W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad E15 Gen 2",
+      "MinFirmwareVersion": "R1EET63W (v1.63)"
+    },
+    {
+      "Model": "ThinkPad E15 Gen 2",
+      "MinFirmwareVersion": "R1AET55W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad E15 Gen 3 AMD",
+      "MinFirmwareVersion": "R1OET45W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad E15 Gen 4",
+      "MinFirmwareVersion": "R1SET62W (v1.33)"
+    },
+    {
+      "Model": "ThinkPad E15 Gen 4 AMD",
+      "MinFirmwareVersion": "R20ET40W (v1.20)"
+    },
+    {
+      "Model": "ThinkPad E16 Gen 1 AMD",
+      "MinFirmwareVersion": "R2CET40W (v1.22)"
+    },
+    {
+      "Model": "ThinkPad E16 Gen 1 Intel",
+      "MinFirmwareVersion": "R2AET61W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad E16 Gen 2 AMD",
+      "MinFirmwareVersion": "R2KET29W (v1.12)"
+    },
+    {
+      "Model": "ThinkPad E16 Gen 2 Intel",
+      "MinFirmwareVersion": "R2JET39W (v1.16)"
+    },
+    {
+      "Model": "ThinkPad E490",
+      "MinFirmwareVersion": "R0YET55W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad E490s",
+      "MinFirmwareVersion": "R0YET55W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad E495",
+      "MinFirmwareVersion": "R11ET50W (v1.30)"
+    },
+    {
+      "Model": "ThinkPad E590",
+      "MinFirmwareVersion": "R0YET55W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad E595",
+      "MinFirmwareVersion": "R11ET50W (v1.30)"
+    },
+    {
+      "Model": "ThinkPad L13",
+      "MinFirmwareVersion": "R15ET60W (v1.41)"
+    },
+    {
+      "Model": "ThinkPad L13 2-in-1 Gen 5",
+      "MinFirmwareVersion": "R2GET25W (v1.07)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 2 AMD",
+      "MinFirmwareVersion": "R1QET52W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 2 non-vPro",
+      "MinFirmwareVersion": "R1FET57W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 2 vPro",
+      "MinFirmwareVersion": "R1PET37W (v1.29)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 3",
+      "MinFirmwareVersion": "R1UET46W (v1.23)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 3 AMD",
+      "MinFirmwareVersion": "R1TET46W (v1.25)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 4",
+      "MinFirmwareVersion": "R26ET37W (v1.15)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 4",
+      "MinFirmwareVersion": "R27ET32W (v1.17)"
+    },
+    {
+      "Model": "ThinkPad L13 Gen 5",
+      "MinFirmwareVersion": "R2GET25W (v1.07)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga",
+      "MinFirmwareVersion": "R15ET60W (v1.41)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga Gen 2 AMD",
+      "MinFirmwareVersion": "R1QET52W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga Gen 2 non-vPro",
+      "MinFirmwareVersion": "R1FET57W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga Gen 2 vPro",
+      "MinFirmwareVersion": "R1PET37W (v1.29)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga Gen 3",
+      "MinFirmwareVersion": "R1UET46W (v1.23)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga Gen 3 AMD",
+      "MinFirmwareVersion": "R1TET46W (v1.25)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga Gen 4",
+      "MinFirmwareVersion": "R26ET37W (v1.15)"
+    },
+    {
+      "Model": "ThinkPad L13 Yoga Gen 4",
+      "MinFirmwareVersion": "R27ET32W (v1.17)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 1",
+      "MinFirmwareVersion": "R17ET41W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 1 AMD",
+      "MinFirmwareVersion": "R19ET55W (v1.39)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 2",
+      "MinFirmwareVersion": "R1JET69W (v1.69)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 2 AMD",
+      "MinFirmwareVersion": "R1KET50W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 3 AMD",
+      "MinFirmwareVersion": "R1YET54W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 4",
+      "MinFirmwareVersion": "R25ET35W (v1.16)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 4",
+      "MinFirmwareVersion": "R24ET38W (v1.21)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 5",
+      "MinFirmwareVersion": "R2HET29W (v1.08)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen 5 AMD",
+      "MinFirmwareVersion": "R2IET32W (v1.32)"
+    },
+    {
+      "Model": "ThinkPad L14 Gen3",
+      "MinFirmwareVersion": "R1XET53W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen 1",
+      "MinFirmwareVersion": "R17ET41W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen 1 AMD",
+      "MinFirmwareVersion": "R19ET55W (v1.39)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen 2",
+      "MinFirmwareVersion": "R1JET69W (v1.69)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen 2 AMD",
+      "MinFirmwareVersion": "R1KET50W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen 3 AMD",
+      "MinFirmwareVersion": "R1YET54W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen 4",
+      "MinFirmwareVersion": "R25ET35W (v1.16)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen 4",
+      "MinFirmwareVersion": "R24ET38W (v1.21)"
+    },
+    {
+      "Model": "ThinkPad L15 Gen3",
+      "MinFirmwareVersion": "R1XET53W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad L16 Gen 1",
+      "MinFirmwareVersion": "R2HET29W (v1.08)"
+    },
+    {
+      "Model": "ThinkPad L16 Gen1 AMD",
+      "MinFirmwareVersion": "R2IET30W (v1.30)"
+    },
+    {
+      "Model": "ThinkPad L380",
+      "MinFirmwareVersion": "R0RET53W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad L380 Yoga",
+      "MinFirmwareVersion": "R0RET53W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad L390",
+      "MinFirmwareVersion": "R10ET61W (v1.46)"
+    },
+    {
+      "Model": "ThinkPad L490",
+      "MinFirmwareVersion": "R0ZET60W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad L590",
+      "MinFirmwareVersion": "R0ZET60W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad P1",
+      "MinFirmwareVersion": "N2EET64W (v1.46)"
+    },
+    {
+      "Model": "ThinkPad P1 Gen 2",
+      "MinFirmwareVersion": "N2OET63W (v1.50)"
+    },
+    {
+      "Model": "ThinkPad P1 Gen 3",
+      "MinFirmwareVersion": "N2VET47W (v1.32)"
+    },
+    {
+      "Model": "ThinkPad P1 Gen 4",
+      "MinFirmwareVersion": "N40ET45W (v1.27)"
+    },
+    {
+      "Model": "ThinkPad P1 Gen 5",
+      "MinFirmwareVersion": "N3JET38W (v1.22)"
+    },
+    {
+      "Model": "ThinkPad P1 Gen 6",
+      "MinFirmwareVersion": "N3ZET33W (v1.20)"
+    },
+    {
+      "Model": "ThinkPad P1 Gen 7",
+      "MinFirmwareVersion": "N48ET11W (v0.08)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 1 AMD",
+      "MinFirmwareVersion": "R1BET85W (v1.54)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 2",
+      "MinFirmwareVersion": "N3WET21W (v1.13)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 2",
+      "MinFirmwareVersion": "N34ET61W (v1.61)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 2 AMD",
+      "MinFirmwareVersion": "R1MET63W (v1.33)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 3",
+      "MinFirmwareVersion": "N3BET60W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 3 AMD",
+      "MinFirmwareVersion": "R23ET86W (v1.62)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 4",
+      "MinFirmwareVersion": "N3QET44W (v1.44)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 5",
+      "MinFirmwareVersion": "R2DET39W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen 5 AMD",
+      "MinFirmwareVersion": "R2LET35W (v1.16)"
+    },
+    {
+      "Model": "ThinkPad P14s Gen4 AMD",
+      "MinFirmwareVersion": "R2FET65W (v1.45)"
+    },
+    {
+      "Model": "ThinkPad P15 Gen 1",
+      "MinFirmwareVersion": "N30ET53W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad P15 Gen 2",
+      "MinFirmwareVersion": "N37ET52W (v1.33)"
+    },
+    {
+      "Model": "ThinkPad P15s Gen 2",
+      "MinFirmwareVersion": "N34ET61W (v1.61)"
+    },
+    {
+      "Model": "ThinkPad P15s Gen 2",
+      "MinFirmwareVersion": "N3WET21W (v1.13)"
+    },
+    {
+      "Model": "ThinkPad P15v Gen 1",
+      "MinFirmwareVersion": "N30ET53W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad P15v Gen 3",
+      "MinFirmwareVersion": "N3EET39W (v1.25)"
+    },
+    {
+      "Model": "ThinkPad P15v Gen2",
+      "MinFirmwareVersion": "N38ET45W (v1.26)"
+    },
+    {
+      "Model": "ThinkPad P15v Gen3 AMD",
+      "MinFirmwareVersion": "N3KET42W (v1.20)"
+    },
+    {
+      "Model": "ThinkPad P16 Gen 1",
+      "MinFirmwareVersion": "N3FET43W (v1.28)"
+    },
+    {
+      "Model": "ThinkPad P16 Gen 2",
+      "MinFirmwareVersion": "N3TET56W (v1.56)"
+    },
+    {
+      "Model": "ThinkPad P16s Gen 1",
+      "MinFirmwareVersion": "N3MET19W (v1.18)"
+    },
+    {
+      "Model": "ThinkPad P16s Gen 1 AMD",
+      "MinFirmwareVersion": "R23ET86W (v1.62)"
+    },
+    {
+      "Model": "ThinkPad P16s Gen 2",
+      "MinFirmwareVersion": "N3QET44W (v1.44)"
+    },
+    {
+      "Model": "ThinkPad P16s Gen 3",
+      "MinFirmwareVersion": "R2DET39W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad P16s Gen2 AMD",
+      "MinFirmwareVersion": "R2FET65W (v1.45)"
+    },
+    {
+      "Model": "ThinkPad P16v Gen 1",
+      "MinFirmwareVersion": "N3VET50W (v1.50)"
+    },
+    {
+      "Model": "ThinkPad P16v Gen 1",
+      "MinFirmwareVersion": "N3UET30W (v1.30)"
+    },
+    {
+      "Model": "ThinkPad P16v Gen 2",
+      "MinFirmwareVersion": "N44ET18W (v1.01)"
+    },
+    {
+      "Model": "ThinkPad P17 Gen 1",
+      "MinFirmwareVersion": "N30ET53W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad P17 Gen 2",
+      "MinFirmwareVersion": "N37ET52W (v1.33)"
+    },
+    {
+      "Model": "ThinkPad P43s",
+      "MinFirmwareVersion": "N2IETA4W (v1.82)"
+    },
+    {
+      "Model": "ThinkPad P52",
+      "MinFirmwareVersion": "N2CET70W (v1.53)"
+    },
+    {
+      "Model": "ThinkPad P52s",
+      "MinFirmwareVersion": "N27ET53W (v1.39)"
+    },
+    {
+      "Model": "ThinkPad P53",
+      "MinFirmwareVersion": "N2NET59W (v1.44)"
+    },
+    {
+      "Model": "ThinkPad P53s",
+      "MinFirmwareVersion": "N2IETA4W (v1.82)"
+    },
+    {
+      "Model": "ThinkPad P72",
+      "MinFirmwareVersion": "N2CET70W (v1.53)"
+    },
+    {
+      "Model": "ThinkPad P73",
+      "MinFirmwareVersion": "N2NET59W (v1.44)"
+    },
+    {
+      "Model": "ThinkPad S2 Gen 3",
+      "MinFirmwareVersion": "R0RET53W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad S2 Gen 4",
+      "MinFirmwareVersion": "R10ET61W (v1.46)"
+    },
+    {
+      "Model": "ThinkPad S2 Gen 9",
+      "MinFirmwareVersion": "R2GET25W (v1.07)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 1",
+      "MinFirmwareVersion": "N2XET41W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 1 AMD",
+      "MinFirmwareVersion": "R1BET85W (v1.54)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 2",
+      "MinFirmwareVersion": "N34ET61W (v1.61)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 2 AMD",
+      "MinFirmwareVersion": "R1MET63W (v1.33)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 3",
+      "MinFirmwareVersion": "N3BET60W (v1.38)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 3 AMD",
+      "MinFirmwareVersion": "R23ET86W (v1.62)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 4",
+      "MinFirmwareVersion": "N3QET44W (v1.44)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 4 AMD",
+      "MinFirmwareVersion": "R2FET65W (v1.45)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 5",
+      "MinFirmwareVersion": "N47ET12W (v1.01)"
+    },
+    {
+      "Model": "ThinkPad T14 Gen 5 AMD",
+      "MinFirmwareVersion": "R2LET35W (v1.16)"
+    },
+    {
+      "Model": "ThinkPad T14p Gen 2",
+      "MinFirmwareVersion": "R2DET39W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 1",
+      "MinFirmwareVersion": "N2YET47W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 1 AMD",
+      "MinFirmwareVersion": "R1CET85W (v1.54)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 2",
+      "MinFirmwareVersion": "N35ET58W (v1.58)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 2 AMD",
+      "MinFirmwareVersion": "R1NET66W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 3",
+      "MinFirmwareVersion": "N3CET62W (v1.43)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 3 AMD",
+      "MinFirmwareVersion": "R22ET80W (v1.50)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 4",
+      "MinFirmwareVersion": "N3PET24W (v1.15)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 4 AMD",
+      "MinFirmwareVersion": "R2EET45W (v1.26)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 5",
+      "MinFirmwareVersion": "N46ET15W (v1.05)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 6",
+      "MinFirmwareVersion": "N3YET58W (v1.23)"
+    },
+    {
+      "Model": "ThinkPad T14s Gen 6 AMD",
+      "MinFirmwareVersion": "R2NET41W (v1.15)"
+    },
+    {
+      "Model": "ThinkPad T15 Gen 1",
+      "MinFirmwareVersion": "N2XET41W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad T15 Gen 2",
+      "MinFirmwareVersion": "N3WET21W (v1.13)"
+    },
+    {
+      "Model": "ThinkPad T15g Gen 1",
+      "MinFirmwareVersion": "N30ET53W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad T15g Gen 2",
+      "MinFirmwareVersion": "N37ET52W (v1.33)"
+    },
+    {
+      "Model": "ThinkPad T15p Gen 1",
+      "MinFirmwareVersion": "N30ET53W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad T15p Gen 3",
+      "MinFirmwareVersion": "N3EET39W (v1.25)"
+    },
+    {
+      "Model": "ThinkPad T16 Gen 1",
+      "MinFirmwareVersion": "N3MET19W (v1.18)"
+    },
+    {
+      "Model": "ThinkPad T16 Gen 1 AMD",
+      "MinFirmwareVersion": "R23ET86W (v1.62)"
+    },
+    {
+      "Model": "ThinkPad T16 Gen 2",
+      "MinFirmwareVersion": "N3QET44W (v1.44)"
+    },
+    {
+      "Model": "ThinkPad T16 Gen2 AMD",
+      "MinFirmwareVersion": "R2FET65W (v1.45)"
+    },
+    {
+      "Model": "ThinkPad T16 Gen3",
+      "MinFirmwareVersion": "N47ET12W (v1.01)"
+    },
+    {
+      "Model": "ThinkPad T480",
+      "MinFirmwareVersion": "N24ET76W (v1.51)"
+    },
+    {
+      "Model": "ThinkPad T480s",
+      "MinFirmwareVersion": "N22ET80W (v1.57)"
+    },
+    {
+      "Model": "ThinkPad T490",
+      "MinFirmwareVersion": "N2IETA4W (v1.82)"
+    },
+    {
+      "Model": "ThinkPad T490 CML",
+      "MinFirmwareVersion": "N2RET30W (v1.24)"
+    },
+    {
+      "Model": "ThinkPad T490s",
+      "MinFirmwareVersion": "N2JETA8W (v1.86)"
+    },
+    {
+      "Model": "ThinkPad T495 AMD",
+      "MinFirmwareVersion": "R12ET66W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad T495s AMD",
+      "MinFirmwareVersion": "R13ET58W (v1.32)"
+    },
+    {
+      "Model": "ThinkPad T580",
+      "MinFirmwareVersion": "N27ET53W (v1.39)"
+    },
+    {
+      "Model": "ThinkPad T590",
+      "MinFirmwareVersion": "N2IETA4W (v1.82)"
+    },
+    {
+      "Model": "ThinkPad X1 2-in-1 Gen 9",
+      "MinFirmwareVersion": "N3YET58W (v1.23)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 10",
+      "MinFirmwareVersion": "N3AET80W (v1.45)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 11",
+      "MinFirmwareVersion": "N3XET51W (v1.26)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 12",
+      "MinFirmwareVersion": "N3YET58W (v1.23)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 6",
+      "MinFirmwareVersion": "N23ET88W (v1.63)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 7",
+      "MinFirmwareVersion": "N2QET55W (v1.49)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 7",
+      "MinFirmwareVersion": "N2HET77W (v1.60)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 8",
+      "MinFirmwareVersion": "N2WET45W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad X1 Carbon Gen 9",
+      "MinFirmwareVersion": "N32ET91W (v1.67)"
+    },
+    {
+      "Model": "ThinkPad X1 Extreme",
+      "MinFirmwareVersion": "N2EET64W (v1.46)"
+    },
+    {
+      "Model": "ThinkPad X1 Extreme Gen 2",
+      "MinFirmwareVersion": "N2OET63W (v1.50)"
+    },
+    {
+      "Model": "ThinkPad X1 Extreme Gen 3",
+      "MinFirmwareVersion": "N2VET47W (v1.32)"
+    },
+    {
+      "Model": "ThinkPad X1 Extreme Gen 4",
+      "MinFirmwareVersion": "N40ET45W (v1.27)"
+    },
+    {
+      "Model": "ThinkPad X1 Extreme Gen 5",
+      "MinFirmwareVersion": "N3JET38W (v1.22)"
+    },
+    {
+      "Model": "ThinkPad X1 Fold 16 Gen 1",
+      "MinFirmwareVersion": "N3LET38W (v1.19)"
+    },
+    {
+      "Model": "ThinkPad X1 Fold Gen 1",
+      "MinFirmwareVersion": "N2PET58W (v1.30)"
+    },
+    {
+      "Model": "ThinkPad X1 Nano Gen 1",
+      "MinFirmwareVersion": "N2TET84W (v1.62)"
+    },
+    {
+      "Model": "ThinkPad X1 Nano Gen 2",
+      "MinFirmwareVersion": "N3IET45W (v1.25)"
+    },
+    {
+      "Model": "ThinkPad X1 Nano Gen 3",
+      "MinFirmwareVersion": "N3NET33W (v1.17)"
+    },
+    {
+      "Model": "ThinkPad X1 Tablet Gen 3",
+      "MinFirmwareVersion": "N1ZET95W (v1.51)"
+    },
+    {
+      "Model": "ThinkPad X1 Titanium",
+      "MinFirmwareVersion": "N2MET66W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad X1 Yoga Gen 3",
+      "MinFirmwareVersion": "N25ET67W (v1.53)"
+    },
+    {
+      "Model": "ThinkPad X1 Yoga Gen 4",
+      "MinFirmwareVersion": "N2QET55W (v1.49)"
+    },
+    {
+      "Model": "ThinkPad X1 Yoga Gen 4",
+      "MinFirmwareVersion": "N2HET77W (v1.60)"
+    },
+    {
+      "Model": "ThinkPad X1 Yoga Gen 6",
+      "MinFirmwareVersion": "N32ET91W (v1.67)"
+    },
+    {
+      "Model": "ThinkPad X1 Yoga Gen 7",
+      "MinFirmwareVersion": "N3AET80W (v1.45)"
+    },
+    {
+      "Model": "ThinkPad X1 Yoga Gen 8",
+      "MinFirmwareVersion": "N3XET51W (v1.26)"
+    },
+    {
+      "Model": "ThinkPad X12 Detachable",
+      "MinFirmwareVersion": "R1GET61W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad X12 Detachable Gen 2",
+      "MinFirmwareVersion": "N43ET27W (v1.10)"
+    },
+    {
+      "Model": "ThinkPad X13 2-in-1 Gen 5",
+      "MinFirmwareVersion": "N45ET18W (v1.08)"
+    },
+    {
+      "Model": "ThinkPad X13 AMD Gen 4",
+      "MinFirmwareVersion": "R29ET60W (v1.34)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen 2",
+      "MinFirmwareVersion": "N35ET58W (v1.58)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen 1",
+      "MinFirmwareVersion": "N2YET47W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen 2 AMD",
+      "MinFirmwareVersion": "R1NET66W (v1.36)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen 3",
+      "MinFirmwareVersion": "N3CET62W (v1.43)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen 3 AMD",
+      "MinFirmwareVersion": "R22ET80W (v1.50)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen 4",
+      "MinFirmwareVersion": "N3oET31W (v1.14)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen 5",
+      "MinFirmwareVersion": "N45ET18W (v1.08)"
+    },
+    {
+      "Model": "ThinkPad X13 Gen1 AMD",
+      "MinFirmwareVersion": "R1CET85W (v1.54)"
+    },
+    {
+      "Model": "ThinkPad X13 Yoga Gen 1",
+      "MinFirmwareVersion": "N2UET71W (v1.51)"
+    },
+    {
+      "Model": "ThinkPad X13 Yoga Gen 2",
+      "MinFirmwareVersion": "N39ET66W (v1.45)"
+    },
+    {
+      "Model": "ThinkPad X13 Yoga Gen 3",
+      "MinFirmwareVersion": "R1ZET51W (v1.18)"
+    },
+    {
+      "Model": "ThinkPad X13 Yoga Gen 4",
+      "MinFirmwareVersion": "N3oET31W (v1.14)"
+    },
+    {
+      "Model": "ThinkPad X13s Gen 1",
+      "MinFirmwareVersion": "N3HET95W (v1.65)"
+    },
+    {
+      "Model": "ThinkPad X280",
+      "MinFirmwareVersion": "N20ET68W (v1.53)"
+    },
+    {
+      "Model": "ThinkPad X380 Yoga",
+      "MinFirmwareVersion": "R0SET56W (v1.40)"
+    },
+    {
+      "Model": "ThinkPad X390",
+      "MinFirmwareVersion": "N2SET37W (v1.31)"
+    },
+    {
+      "Model": "ThinkPad X390",
+      "MinFirmwareVersion": "N2JETA8W (v1.86)"
+    },
+    {
+      "Model": "ThinkPad X390 Yoga",
+      "MinFirmwareVersion": "N2LET99W (v1.99)"
+    },
+    {
+      "Model": "ThinkPad X395 AMD",
+      "MinFirmwareVersion": "R13ET58W (v1.32)"
+    },
+    {
+      "Model": "Yoga 11e 5th Gen",
+      "MinFirmwareVersion": "R0VET46W (v1.31)"
+    },
+    {
+      "Model": "Yoga Gen 5",
+      "MinFirmwareVersion": "N2WET45W (v1.35)"
+    },
+    {
+      "Model": "ThinkPad Z13 Gen 1",
+      "MinFirmwareVersion": "N3GET71W (v1.71)"
+    },
+    {
+      "Model": "ThinkPad Z13 Gen 2",
+      "MinFirmwareVersion": "N41ET53W (v1.30)"
+    },
+    {
+      "Model": "ThinkPad Z16 Gen 1",
+      "MinFirmwareVersion": "N3GET71W (v1.71)"
+    },
+    {
+      "Model": "ThinkPad Z16 Gen 2",
+      "MinFirmwareVersion": "N41ET53W (v1.30)"
+    },
+    {
+      "Model": "ThinkStation P330 Tiny",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkStation P2 Tower",
+      "MinFirmwareVersion": "S0IKT76A / 1.0.0.118"
+    },
+    {
+      "Model": "ThinkStation P2 Tower Gen 2",
+      "MinFirmwareVersion": "S0MKT14A"
+    },
+    {
+      "Model": "ThinkStation P3 Tiny",
+      "MinFirmwareVersion": "M4WKT59A / 1.89"
+    },
+    {
+      "Model": "ThinkStation P3 Tiny Gen 2",
+      "MinFirmwareVersion": "M5PKT26A"
+    },
+    {
+      "Model": "ThinkStation P3 Tower",
+      "MinFirmwareVersion": "S0IKT76A / 1.0.0.118"
+    },
+    {
+      "Model": "ThinkStation P3 Tower Gen 2",
+      "MinFirmwareVersion": "S0MKT14A"
+    },
+    {
+      "Model": "ThinkStation P3 Ultra SFF",
+      "MinFirmwareVersion": "S0JKT32A / 1.0.0.50"
+    },
+    {
+      "Model": "ThinkStation P3 Ultra SFF Gen 2",
+      "MinFirmwareVersion": "S0NKT14A"
+    },
+    {
+      "Model": "ThinkStation P320 SFF",
+      "MinFirmwareVersion": "S06KT69A/ 10.0.0.105"
+    },
+    {
+      "Model": "ThinkStation P320 Tower",
+      "MinFirmwareVersion": "S06KT69A/ 10.0.0.105"
+    },
+    {
+      "Model": "ThinkStation P330 SFF",
+      "MinFirmwareVersion": "M1VKT78A / 10.0.0.120"
+    },
+    {
+      "Model": "ThinkStation P330 Tiny",
+      "MinFirmwareVersion": "M1UKT78A / 1.0.0.120"
+    },
+    {
+      "Model": "ThinkStation P330 Tower",
+      "MinFirmwareVersion": "M1VKT78A / 10.0.0.120"
+    },
+    {
+      "Model": "ThinkStation P340 SFF",
+      "MinFirmwareVersion": "S08KT5FA /1.0.0.95"
+    },
+    {
+      "Model": "ThinkStation P340 Tiny",
+      "MinFirmwareVersion": "M2WKT62A / 1.98"
+    },
+    {
+      "Model": "ThinkStation P340 Tower",
+      "MinFirmwareVersion": "S08KT5FA /1.0.0.95"
+    },
+    {
+      "Model": "ThinkStation P348 Tower",
+      "MinFirmwareVersion": "M3KKT49A / 1.0.0.73"
+    },
+    {
+      "Model": "ThinkStation P350 SFF",
+      "MinFirmwareVersion": "S0AKT49A / 1.0.0.73"
+    },
+    {
+      "Model": "ThinkStation P350 Tiny",
+      "MinFirmwareVersion": "M3JKT42A / 1.46"
+    },
+    {
+      "Model": "ThinkStation P350 Tower",
+      "MinFirmwareVersion": "S0AKT49A / 1.0.0.73"
+    },
+    {
+      "Model": "ThinkStation P358 Tower",
+      "MinFirmwareVersion": "S0HKT29A / 1.0.0.41"
+    },
+    {
+      "Model": "ThinkStation P360 Tiny",
+      "MinFirmwareVersion": "M4GKT35A / 1.53"
+    },
+    {
+      "Model": "ThinkStation P360 Tower",
+      "MinFirmwareVersion": "S0EKT60A / 1.96"
+    },
+    {
+      "Model": "ThinkStation P360 Ultra",
+      "MinFirmwareVersion": "S0FKT39A / 1.0.0.57"
+    },
+    {
+      "Model": "ThinkStation P5",
+      "MinFirmwareVersion": "S0CKT27A / 1.0.0.39"
+    },
+    {
+      "Model": "ThinkStation P520",
+      "MinFirmwareVersion": "S03KT70A / 1.0.0.112"
+    },
+    {
+      "Model": "ThinkStation P520c",
+      "MinFirmwareVersion": "S03KT70A / 1.0.0.112"
+    },
+    {
+      "Model": "ThinkStation P620",
+      "MinFirmwareVersion": "S07KT6BA / 1.107"
+    },
+    {
+      "Model": "ThinkStation P7",
+      "MinFirmwareVersion": "S0DKT27A / 1.0.0.39"
+    },
+    {
+      "Model": "ThinkStation P720",
+      "MinFirmwareVersion": "S04KT77A / 1.0.0.119"
+    },
+    {
+      "Model": "ThinkStation P8",
+      "MinFirmwareVersion": "S0GKT47A / 1.0.0.71"
+    },
+    {
+      "Model": "ThinkStation P920",
+      "MinFirmwareVersion": "S05KT77A / 1.0.0.119"
+    },
+    {
+      "Model": "ThinkStation PX",
+      "MinFirmwareVersion": "S09KT23A / 1.35"
+    },
+    {
+      "Model": "IdeaCentre Tower 14IRR9",
+      "MinFirmwareVersion": "M56KT5AA (1.90)"
+    },
+    {
+      "Model": "LOQ Tower 17IRR9",
+      "MinFirmwareVersion": "M56KT5AA (1.90)"
+    },
+    {
+      "Model": "IdeaCentre 5 14IRB8",
+      "MinFirmwareVersion": "M4UKT4AA (1.74)"
+    },
+    {
+      "Model": "LOQ Tower 17IRB8",
+      "MinFirmwareVersion": "M4UKT4AA (1.74)"
+    },
+    {
+      "Model": "IdeaCentre Tower 08IAS10",
+      "MinFirmwareVersion": "M5WKT12A (1.18)"
+    },
+    {
+      "Model": "IdeaCentre Mini 01IRH10R",
+      "MinFirmwareVersion": "M5XKT14A (1.20)"
+    },
+    {
+      "Model": "IdeaCentre Mini 01IRH8",
+      "MinFirmwareVersion": "M4YKT1DA (1.29)"
+    },
+    {
+      "Model": "IdeaCentre Tower 08IRH",
+      "MinFirmwareVersion": "M5LKT26A (1.38)"
+    },
+    {
+      "Model": "IdeaCentre Tower 08IRR9",
+      "MinFirmwareVersion": "M5IKT20A (1.32)"
+    },
+    {
+      "Model": "IdeaCentre 3 07IRB8",
+      "MinFirmwareVersion": "M4ZKT4AA (1.74)"
+    },
+    {
+      "Model": "IdeaCentre 3 07IAB7",
+      "MinFirmwareVersion": "M49KT32A (1.50)"
+    },
+    {
+      "Model": "IdeaCentre IdeaCente AIO 3 24 IRH9",
+      "MinFirmwareVersion": "O6AKT24A (1.36)"
+    },
+    {
+      "Model": "IdeaCentre IdeaCente AIO 3 27 IRH9",
+      "MinFirmwareVersion": "O6AKT24A (1.36)"
+    },
+    {
+      "Model": "IdeaCentre 5 14IAB7",
+      "MinFirmwareVersion": "M42KT55A (1.85)"
+    },
+    {
+      "Model": "IdeaCentre Tower 08AKP10 HPT",
+      "MinFirmwareVersion": "M67KT1EA (1.30)"
+    },
+    {
+      "Model": "IdeaCentre Tower 08AKP10 KRK",
+      "MinFirmwareVersion": "M68KT23A (1.35)"
+    },
+    {
+      "Model": "LOQ Tower 26ADR10",
+      "MinFirmwareVersion": "O6RKT14A (1.20) O6UKT0DA (1.13)"
+    },
+    {
+      "Model": "LOQ 17IAX10",
+      "MinFirmwareVersion": "O6GKT20A（1.32）"
+    },
+    {
+      "Model": "Legion T5 26ARA8",
+      "MinFirmwareVersion": "O5SKT38A (1.56)"
+    },
+    {
+      "Model": "Legion T5 26IRX9",
+      "MinFirmwareVersion": "O6CKT16A (1.22)"
+    },
+    {
+      "Model": "Legion T7 34IAS10",
+      "MinFirmwareVersion": "O67KT20A (1.32)"
+    },
+    {
+      "Model": "Legion T5 30IAS10",
+      "MinFirmwareVersion": "O6DKT18A (1.24)"
+    },
+    {
+      "Model": "Legion T5 30AGB10",
+      "MinFirmwareVersion": "O6EKT1EA (1.30)"
+    },
+    {
+      "Model": "Legion T5 30IAX10",
+      "MinFirmwareVersion": "O6FKT15A (1.21)"
+    },
+    {
+      "Model": "Legion T7 34IRZ8",
+      "MinFirmwareVersion": "O5UKT43A (1.67)"
+    },
+    {
+      "Model": "Legion T5 26IRB8",
+      "MinFirmwareVersion": "O5TKT3DA (1.60)"
+    },
+    {
+      "Model": "ThinkCentre M720t",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkCentre M720s",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkCentre M720q",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkCentre M920t",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkCentre M920s",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkCentre M920q",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkCentre M920x",
+      "MinFirmwareVersion": "M1UKT78A/1.0.0.120"
+    },
+    {
+      "Model": "ThinkCentre M90n-1",
+      "MinFirmwareVersion": "M2AKT48A (1.72)"
+    },
+    {
+      "Model": "ThinkCentre M75t/s Gen 2",
+      "MinFirmwareVersion": "M3AKT58A（1.88）"
+    },
+    {
+      "Model": "ThinkCentre M75t/s Gen 2",
+      "MinFirmwareVersion": "M46KT58A（1.88）"
+    },
+    {
+      "Model": "ThinkCentre M90a Pro Gen 4",
+      "MinFirmwareVersion": "M54KT38A (1.56)"
+    },
+    {
+      "Model": "ThinkCentre M90a-5",
+      "MinFirmwareVersion": "M5EKT22A (1.34)"
+    },
+    {
+      "Model": "ThinkCentre M70t, M70s, M80t, M80s, M90t, M90s",
+      "MinFirmwareVersion": "M2TKT60A (1.96)"
+    },
+    {
+      "Model": "ThinkCentre M70t/s Gen 5",
+      "MinFirmwareVersion": "M56KT5AA (1.90)"
+    },
+    {
+      "Model": "ThinkCentre neo 50t Gen 5",
+      "MinFirmwareVersion": "M56KT5AA (1.90)"
+    },
+    {
+      "Model": "ThinkCentre neo 50t Gen 4",
+      "MinFirmwareVersion": "M4UKT4AA (1.74)"
+    },
+    {
+      "Model": "ThinkCentre Neo 50s Gen 6",
+      "MinFirmwareVersion": "M5WKT12A (1.18)"
+    },
+    {
+      "Model": "ThinkCentre M90q Gen 6",
+      "MinFirmwareVersion": "M5PKT26A (1.38)"
+    },
+    {
+      "Model": "ThinkCentre neo Ultra Gen 2",
+      "MinFirmwareVersion": "M5PKT26A (1.38)"
+    },
+    {
+      "Model": "ThinkCentre M70q Gen 6",
+      "MinFirmwareVersion": "M5QKT1DA (1.29)"
+    },
+    {
+      "Model": "ThinkCentre neo 50q Gen 5",
+      "MinFirmwareVersion": "M5XKT14A (1.20)"
+    },
+    {
+      "Model": "ThinkCentre neo 50q Gen 4",
+      "MinFirmwareVersion": "M4YKT1DA (1.29)"
+    },
+    {
+      "Model": "ThinkCentre neo 50q Gen 4 Thin Client",
+      "MinFirmwareVersion": "M4YKT1DA (1.29)"
+    },
+    {
+      "Model": "ThinkCentre M90q Gen 5",
+      "MinFirmwareVersion": "M5KKT20A (1.32)"
+    },
+    {
+      "Model": "ThinkCentre neo Ultra",
+      "MinFirmwareVersion": "M5KKT20A (1.32)"
+    },
+    {
+      "Model": "ThinkCentre M70q Gen 5",
+      "MinFirmwareVersion": "M5HKT22A (1.34)"
+    },
+    {
+      "Model": "ThinkCentre M70q Gen 4",
+      "MinFirmwareVersion": "M4VKT2BA (1.43)"
+    },
+    {
+      "Model": "ThinkCentre M90q Gen 4",
+      "MinFirmwareVersion": "M4WKT56A (86)"
+    },
+    {
+      "Model": "ThinkCentre M80q Gen 4",
+      "MinFirmwareVersion": "M4WKT56A (86)"
+    },
+    {
+      "Model": "ThinkCentre M70q Gen 3",
+      "MinFirmwareVersion": "M43KT30A (1.48)"
+    },
+    {
+      "Model": "ThinkCentre M90q Gen 3",
+      "MinFirmwareVersion": "M4GKT37A (1.55)"
+    },
+    {
+      "Model": "ThinkCentre M80q Gen 3",
+      "MinFirmwareVersion": "M4GKT37A (1.55)"
+    },
+    {
+      "Model": "ThinkCentre M90q Gen 2",
+      "MinFirmwareVersion": "M3JKT44A (1.68)"
+    },
+    {
+      "Model": "ThinkCentre M70q Gen 2",
+      "MinFirmwareVersion": "M3JKT44A (1.68)"
+    },
+    {
+      "Model": "ThinkCentre M90q-1",
+      "MinFirmwareVersion": "M2WKT63A (1.99)"
+    },
+    {
+      "Model": "ThinkCentre M80q-1",
+      "MinFirmwareVersion": "M2WKT63A (1.99)"
+    },
+    {
+      "Model": "ThinkCentre M70q-1",
+      "MinFirmwareVersion": "M2WKT63A (1.99)"
+    },
+    {
+      "Model": "ThinkCentre neo 30a Gen 3",
+      "MinFirmwareVersion": "O5NKT38 (1.38)"
+    },
+    {
+      "Model": "ThinkCentre neo 30a Gen 4",
+      "MinFirmwareVersion": "O5YKT28A (1.28)"
+    },
+    {
+      "Model": "ThinkCentre neo 30s Gen 5",
+      "MinFirmwareVersion": "M5LKT26A (1.38)"
+    },
+    {
+      "Model": "ThinkCentre neo 30t Gen5",
+      "MinFirmwareVersion": "M5LKT26A (1.38)"
+    },
+    {
+      "Model": "ThinkCentre neo 50s Gen 5",
+      "MinFirmwareVersion": "M5IKT20A (1.32)"
+    },
+    {
+      "Model": "ThinkCentre neo 50s Gen 4",
+      "MinFirmwareVersion": "M4ZKT4AA (1.74)"
+    },
+    {
+      "Model": "ThinkCentre neo 50s Gen 3",
+      "MinFirmwareVersion": "M49KT32A (1.50)"
+    },
+    {
+      "Model": "ThinkCentre M90t/s Gen 4",
+      "MinFirmwareVersion": "M4SKT40A (1.64)"
+    },
+    {
+      "Model": "ThinkCentre M90t Gen 5, M90s Gen 5",
+      "MinFirmwareVersion": "M4SKT7AA (1.122）"
+    },
+    {
+      "Model": "ThinkCentre M70t Gen 4, M70s Gen 4",
+      "MinFirmwareVersion": "M4TKT40A (1.64）"
+    },
+    {
+      "Model": "ThinkCentre M90a",
+      "MinFirmwareVersion": "M2RKT66A (1.102)"
+    },
+    {
+      "Model": "ThinkCentre M75t Gen 5, M75s Gen 5",
+      "MinFirmwareVersion": "M4RKT30A (1.48)"
+    },
+    {
+      "Model": "ThinkCentre M90t Gen 3, M90s Gen 3",
+      "MinFirmwareVersion": "M40KT60A (1.96)"
+    },
+    {
+      "Model": "ThinkCentre M80t Gen 3, M80s Gen 3",
+      "MinFirmwareVersion": "M40KT60A (1.96)"
+    },
+    {
+      "Model": "ThinkCentre Neo 70t Gen 3",
+      "MinFirmwareVersion": "M40KT60A (1.96)"
+    },
+    {
+      "Model": "ThinkCentre M70t/s Gen 3",
+      "MinFirmwareVersion": "M41KT60A（1.96）"
+    },
+    {
+      "Model": "ThinkCentre M70t/s Gen 6",
+      "MinFirmwareVersion": "M5OKT39A（1.57）"
+    },
+    {
+      "Model": "ThinkCentre neo 50t Gen 6",
+      "MinFirmwareVersion": "M5RKT38A (1.56)"
+    },
+    {
+      "Model": "ThinkCentre M75Q-GEN 5",
+      "MinFirmwareVersion": "M55KT1DA（1.29）"
+    },
+    {
+      "Model": "ThinkCentre M75Q-GEN 5",
+      "MinFirmwareVersion": "M63KT08A (1.08)"
+    },
+    {
+      "Model": "ThinkCentre M75Q-GEN 2",
+      "MinFirmwareVersion": "M3CKT3EA（1.62）"
+    },
+    {
+      "Model": "ThinkCentre M75Q-GEN 2",
+      "MinFirmwareVersion": "M47KT3FA（1.63）"
+    },
+    {
+      "Model": "ThinkCentre M75n",
+      "MinFirmwareVersion": "M33KT32A"
+    },
+    {
+      "Model": "ThinkCentre M70A_GEN 3",
+      "MinFirmwareVersion": "M4EKT26A（1.38)"
+    },
+    {
+      "Model": "ThinkCentre M70A_GEN 6",
+      "MinFirmwareVersion": "M5VKT16A（1.22）"
+    },
+    {
+      "Model": "ThinkCentre Neo55q Gen 6",
+      "MinFirmwareVersion": "M65KT13A（1.19）"
+    },
+    {
+      "Model": "ThinkCentre Neo55q Gen 6",
+      "MinFirmwareVersion": "M66KT13A (1.19)"
+    },
+    {
+      "Model": "ThinkCentre M90A Pro GEN 6",
+      "MinFirmwareVersion": "M5SKT16A (1.22)"
+    },
+    {
+      "Model": "ThinkCentre M90A GEN 6",
+      "MinFirmwareVersion": "M5UKT16A (1.22)"
+    },
+    {
+      "Model": "ThinkCentre M90a Gen 2",
+      "MinFirmwareVersion": "M3LKT2EA (1.46)"
+    },
+    {
+      "Model": "ThinkCentre M90a Gen 3",
+      "MinFirmwareVersion": "M4HKT25A (1.37)"
+    },
+    {
+      "Model": "ThinkCentre Neo 50a Gen 5",
+      "MinFirmwareVersion": "O6AKT24A (1.36)"
+    },
+    {
+      "Model": "ThinkCentre M75s-Gen 2",
+      "MinFirmwareVersion": "M3BKT37A"
+    },
+    {
+      "Model": "ThinkCentre neo 50t Gen 3",
+      "MinFirmwareVersion": "M42KT55A (1.85)"
+    },
+    {
+      "Model": "ThinkEdge SE10",
+      "MinFirmwareVersion": "M4XKT1DA (1.0.0.29)"
+    },
+    {
+      "Model": "ThinkEdge SE50",
+      "MinFirmwareVersion": "M2PKT49A (20.0.0.49)"
+    },
+    {
+      "Model": "ThinkEdge SE30",
+      "MinFirmwareVersion": "M3FKT40A (1.0.0.64)"
+    },
+    {
+      "Model": "ThinkBook 13x G4 IMH",
+      "MinFirmwareVersion": "MTCN46WW (1.46)"
+    },
+    {
+      "Model": "ThinkBook 14 G7+ IAH",
+      "MinFirmwareVersion": "R6CN27WW (1.27)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G5+ APO",
+      "MinFirmwareVersion": "MFCN31WW (1.31)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G6 ABP",
+      "MinFirmwareVersion": "MNCN37WW (1.37)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G7 AHP",
+      "MinFirmwareVersion": "P4CN38WW (1.38)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G7 ARP",
+      "MinFirmwareVersion": "P6CN29WW (1.29)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G7/G4 YOGA IML",
+      "MinFirmwareVersion": "P3CN51WW (1.51)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G7+ AHP",
+      "MinFirmwareVersion": "S6CN12WW (1.12)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G7+ AKP",
+      "MinFirmwareVersion": "RPCN17WW (1.17)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G7+ ASP",
+      "MinFirmwareVersion": "PXCN29WW (1.29)"
+    },
+    {
+      "Model": "ThinkBook 14/16 G8 IRL",
+      "MinFirmwareVersion": "QZCN17WW (1.17)"
+    },
+    {
+      "Model": "ThinkBook14/16 G9 IRL",
+      "MinFirmwareVersion": "SRCN01WW"
+    },
+    {
+      "Model": "ThinkBook 14/16 G8/G5 YOGA IAL",
+      "MinFirmwareVersion": "RKCN21WW (1.21)"
+    },
+    {
+      "Model": "ThinkBook 14 G6+ IMH/ZhaoYang X7-14 IMH",
+      "MinFirmwareVersion": "NJCN67WW"
+    },
+    {
+      "Model": "ThinkBook 16 G7+ IAH",
+      "MinFirmwareVersion": "R5CN55WW (1.55)"
+    },
+    {
+      "Model": "ThinkBook 16p G6 ADR",
+      "MinFirmwareVersion": "R7CN23WW (1.23)"
+    },
+    {
+      "Model": "ThinkBook 16P G6 AFR",
+      "MinFirmwareVersion": "SKCN13WW (1.13)"
+    },
+    {
+      "Model": "ThinkBook 16P G6 IAX",
+      "MinFirmwareVersion": "R2CN31WW (1.31)"
+    },
+    {
+      "Model": "ThinkBook 16 G7 QOY",
+      "MinFirmwareVersion": "PWCN14WW"
+    },
+    {
+      "Model": "ThinkBook Plus G6 Rollable",
+      "MinFirmwareVersion": "QWCN38WW (1.38)"
+    },
+    {
+      "Model": "ThinkBook X G2 IAH",
+      "MinFirmwareVersion": "RJCN28WW (1.28)"
+    },
+    {
+      "Model": "Lenovo 100W Gen 4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "Lenovo 100W Gen 5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "Lenovo 13W Gen 3",
+      "MinFirmwareVersion": "QQCN31WW"
+    },
+    {
+      "Model": "Lenovo 300W Gen 4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "Lenovo 300W Gen 5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "Lenovo 500W Gen 4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "Lenovo 500W Gen 5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen4",
+      "MinFirmwareVersion": "L2/L3CN46WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "100W/300W/500W Gen5",
+      "MinFirmwareVersion": "QH/QJCN31WW"
+    },
+    {
+      "Model": "Lenovo 13w Gen3",
+      "MinFirmwareVersion": "QQCN30WW"
+    },
+    {
+      "Model": "Lenovo 13w Gen3",
+      "MinFirmwareVersion": "QQCN30WW"
+    },
+    {
+      "Model": "IdeaPad Flex 5 14ABR8/C580 AMD",
+      "MinFirmwareVersion": "L7CN27WW"
+    },
+    {
+      "Model": "IdeaPad Flex 5 14ABR8/C580 AMD",
+      "MinFirmwareVersion": "L7CN27WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 13ARP10",
+      "MinFirmwareVersion": "PYCN28WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 13ARP10",
+      "MinFirmwareVersion": "PYCN28WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 14IRL8/16IRL8 IdeaPad Slim 5 14IAH8/16IAH8",
+      "MinFirmwareVersion": "LACN42WW"
+    },
+    {
+      "Model": "LOQ 15IRH8/16IRH8",
+      "MinFirmwareVersion": "LZCN44WW"
+    },
+    {
+      "Model": "Legion Slim 5 16IRH8",
+      "MinFirmwareVersion": "M2CN40WW"
+    },
+    {
+      "Model": "Legion S7 16IRH8",
+      "MinFirmwareVersion": "M0CN44WW"
+    },
+    {
+      "Model": "LOQ 15IAX9I",
+      "MinFirmwareVersion": "NFCN48WW"
+    },
+    {
+      "Model": "LOQ 15IRX9/LOQ 15IAX9",
+      "MinFirmwareVersion": "NECN50WW"
+    },
+    {
+      "Model": "Legion 7 16IRX9",
+      "MinFirmwareVersion": "NSCN41WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 15IRU9/15IRH9",
+      "MinFirmwareVersion": "NACN37WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 14/16IRU9",
+      "MinFirmwareVersion": "PFCN19WW"
+    },
+    {
+      "Model": "Y590s IRX/Legion 5 16IRX9/Legion Y7000P IRX9",
+      "MinFirmwareVersion": "NMCN34WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 14/16IMH9",
+      "MinFirmwareVersion": "N7CN35WW"
+    },
+    {
+      "Model": "IdeaPad 1 14/15 AMN7/S170-14/15 AMN",
+      "MinFirmwareVersion": "KSCN43WW"
+    },
+    {
+      "Model": "IdeaPad 5 14/16ABR8/ S580",
+      "MinFirmwareVersion": "L9CN32WW"
+    },
+    {
+      "Model": "LOQ 15APH8/LOQ 16APH8",
+      "MinFirmwareVersion": "LYCN48WW"
+    },
+    {
+      "Model": "Legion Slim 5 16APH8",
+      "MinFirmwareVersion": "M3CN49WW"
+    },
+    {
+      "Model": "Legion Slim 7 16APH8",
+      "MinFirmwareVersion": "M1CN48WW"
+    },
+    {
+      "Model": "ILS4P/ILS6P/ S590-14 AHP",
+      "MinFirmwareVersion": "NGCN34WW"
+    },
+    {
+      "Model": "Legion S5 16AHP9",
+      "MinFirmwareVersion": "NRCN26WW"
+    },
+    {
+      "Model": "LOQ 15AHP9",
+      "MinFirmwareVersion": "NZCN30WW"
+    },
+    {
+      "Model": "Legion Slim 5 16ARP9/Legion S5 16 (RMB)",
+      "MinFirmwareVersion": "NUCN17WW"
+    },
+    {
+      "Model": "LOQ 15ARP9/LOQ 15 (RMB)",
+      "MinFirmwareVersion": "PQCN27WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 14QNV9/XiaoXin 14 QNV9",
+      "MinFirmwareVersion": "PUCN53WW"
+    },
+    {
+      "Model": "Lenovo Slim 7 14ILL10/Yoga Slim 7 14ILL10",
+      "MinFirmwareVersion": "QSCN34WW"
+    },
+    {
+      "Model": "IdeaPad Pro 5 14IAH10",
+      "MinFirmwareVersion": "QLCN35WW"
+    },
+    {
+      "Model": "Yoga Pro 7 14IAH10",
+      "MinFirmwareVersion": "QGCN35WW"
+    },
+    {
+      "Model": "IdeaPad Pro 5 14AKP10/IdeaPad Pro 5 14ASP10",
+      "MinFirmwareVersion": "QKCN29WW"
+    },
+    {
+      "Model": "Yoga Pro 7 14AKP10/Yoga Pro 7 14ASP10",
+      "MinFirmwareVersion": "QFCN28WW"
+    },
+    {
+      "Model": "Yoga Slim 7 14AKP10",
+      "MinFirmwareVersion": "QTCN29WW"
+    },
+    {
+      "Model": "LOQ 15IRX10/LOQ 17IRX10",
+      "MinFirmwareVersion": "R3CN44WW"
+    },
+    {
+      "Model": "LOQ 15AHP10",
+      "MinFirmwareVersion": "R8CN25WW"
+    },
+    {
+      "Model": "LOQ 15IRX11E",
+      "MinFirmwareVersion": "SECN21WW"
+    },
+    {
+      "Model": "IdeaPad Duet 5 12IRU8",
+      "MinFirmwareVersion": "M7CN23WW"
+    },
+    {
+      "Model": "IdeaPad Duet 3 11IAN8",
+      "MinFirmwareVersion": "LSCN27WW"
+    },
+    {
+      "Model": "Legion Go 8APU1",
+      "MinFirmwareVersion": "N3CN34WW"
+    },
+    {
+      "Model": "S170/V14 IJL",
+      "MinFirmwareVersion": "HTCN40WW"
+    },
+    {
+      "Model": "S370-141517IAU&S170-1415IAU&V141517-IAU&S1415-IAU",
+      "MinFirmwareVersion": "JKCN45WW"
+    },
+    {
+      "Model": "IdeaPad 3/(14, 8)Lenovo V14/V15 G4 IAN/IdeaPad Slim 3 1415IAN8",
+      "MinFirmwareVersion": "KUCN34WW"
+    },
+    {
+      "Model": "IdeaPad Slim 3 14/15/16IRU8/IdeaPad 14s/15s/16s IRU8",
+      "MinFirmwareVersion": "LTCN33WW"
+    },
+    {
+      "Model": "IdeaPad Pro 5 16IRH8",
+      "MinFirmwareVersion": "KZCN43WW"
+    },
+    {
+      "Model": "S170IRU/S370IRU/V1415IRU",
+      "MinFirmwareVersion": "MCCN27WW"
+    },
+    {
+      "Model": "Legion Pro 7 16IRX9H/ Legion Y9000P IRX9H",
+      "MinFirmwareVersion": "N2CN21WW"
+    },
+    {
+      "Model": "Legion Pro 5 16IRX9/ Legion Y9000P IRX9",
+      "MinFirmwareVersion": "N0CN21WW"
+    },
+    {
+      "Model": "IdeaPad Slim 3 14/15/16 IRU9/IRU9 1/IdeaPad 14s/15s/16s IRU9",
+      "MinFirmwareVersion": "P2CN17WW"
+    },
+    {
+      "Model": "Yoga Flex 9 14IMH9/YOGA Air 14c IMH9/Yoga 9 2-in-1 14IMH9",
+      "MinFirmwareVersion": "NNCN28WW"
+    },
+    {
+      "Model": "IdeaPad Pro 5 16IMH9/16IMH9 U1/D2/小新Pro 16 IMH9",
+      "MinFirmwareVersion": "MECN65WW"
+    },
+    {
+      "Model": "Yoga Pro 9 16IMH9/YOGA Pro 16s IMH9",
+      "MinFirmwareVersion": "NKCN27WW"
+    },
+    {
+      "Model": "Yoga Book 9 13IMU9",
+      "MinFirmwareVersion": "NVCN25WW"
+    },
+    {
+      "Model": "Lenovo V14/15 G5 IRL",
+      "MinFirmwareVersion": "PMCN15WW"
+    },
+    {
+      "Model": "IdeaPad Slim 3 14/15/16IRH10/ 14/15/16IRH10R/ 14/15IRU10",
+      "MinFirmwareVersion": "QDCN18WW"
+    },
+    {
+      "Model": "Yoga 9 2-in-1 14ILL10",
+      "MinFirmwareVersion": "Q9CN18WW"
+    },
+    {
+      "Model": "S3Genx ARP",
+      "MinFirmwareVersion": "QBCN24WW"
+    },
+    {
+      "Model": "S390ITN/IdeaPad Slim 3 1415ITN9",
+      "MinFirmwareVersion": "QUCN13WW"
+    },
+    {
+      "Model": "Yoga Book 9 14IAH10",
+      "MinFirmwareVersion": "QECN21WW"
+    },
+    {
+      "Model": "Yoga Pro 9 14IRP8/YogaPro 14s IRP8D/Lenovo Slim Pro 9 14IRP8",
+      "MinFirmwareVersion": "MBCN31WW"
+    },
+    {
+      "Model": "IdeaPad Pro 5 16IAH10",
+      "MinFirmwareVersion": "PZCN24WW"
+    },
+    {
+      "Model": "V14 G6 ITN",
+      "MinFirmwareVersion": "RHCN14WW"
+    },
+    {
+      "Model": "IdeaPad Slim 3 14/15AMN8 & Lenovo V14/V15 Gen4 AMN",
+      "MinFirmwareVersion": "L1CN39WW"
+    },
+    {
+      "Model": "IdeaPad 3 14/15/17ABA7",
+      "MinFirmwareVersion": "JTCN52WW"
+    },
+    {
+      "Model": "Lenovo V14 G4 ABP",
+      "MinFirmwareVersion": "MSCN15WW"
+    },
+    {
+      "Model": "IdeaPad Slim 3 14ABR8",
+      "MinFirmwareVersion": "KYCN31WW"
+    },
+    {
+      "Model": "IdeaPad5 15ABA7",
+      "MinFirmwareVersion": "KACN24WW"
+    },
+    {
+      "Model": "S580APH/IdeaPad Pro 5 16APH8",
+      "MinFirmwareVersion": "MDCN34WW"
+    },
+    {
+      "Model": "IdeaPad Slim 3 15Q8X10",
+      "MinFirmwareVersion": "RVCN18WW"
+    },
+    {
+      "Model": "Lenovo IdeaPad Pro 5 14IRH8(S580)",
+      "MinFirmwareVersion": "LJCN35WW"
+    },
+    {
+      "Model": "Yoga Slim 6 14IRH8",
+      "MinFirmwareVersion": "N1CN12WW"
+    },
+    {
+      "Model": "IdeaPad 5 2in1 14IRU9/IdeaPad 5 2in1 16IRU9(C590 Intel)",
+      "MinFirmwareVersion": "P0CN18WW"
+    },
+    {
+      "Model": "IdeaPad 5 2in1 14IRH9 (C590-H Intel)",
+      "MinFirmwareVersion": "PVCN04WW"
+    },
+    {
+      "Model": "IdeaPad slim 5 14/16 IRH10 14/16IRH10R(S5 GenX)",
+      "MinFirmwareVersion": "Q5CN15WW"
+    },
+    {
+      "Model": "Yoga 7 2in1 14IML9/Yoga 7 2in1 16IML9(C790 Intel)",
+      "MinFirmwareVersion": "NWCN15WW"
+    },
+    {
+      "Model": "IdeaPad Pro5 14IMH9(S590 pro Intel)",
+      "MinFirmwareVersion": "N8CN24WW"
+    },
+    {
+      "Model": "Yoga Pro7 14IMH9(S790 pro Intel)",
+      "MinFirmwareVersion": "N9CN24WW"
+    },
+    {
+      "Model": "Yoga Slim 7 14IMH9(S790 Intel)",
+      "MinFirmwareVersion": "NPCN20WW"
+    },
+    {
+      "Model": "IdeaPad 5 2-in-1 14/16IAL10/XiaoXin2-in-1 14 IAL10(C510)",
+      "MinFirmwareVersion": "RBCN15WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 14/16IAH10(S510)",
+      "MinFirmwareVersion": "S1CN08WW"
+    },
+    {
+      "Model": "Yoga 7 2-in-1 14/16ILL10(C710)",
+      "MinFirmwareVersion": "QPCN11WW"
+    },
+    {
+      "Model": "Yoga Pro 7 14APH8/Slim Pro 7 14APH8",
+      "MinFirmwareVersion": "MLCN31WW"
+    },
+    {
+      "Model": "Yoga 6 14APU8/Yoga Slim 6 14APU/S680",
+      "MinFirmwareVersion": "M4CN35WW"
+    },
+    {
+      "Model": "Yoga 7 2in1 14AHP9/Yoga 7 2in1 16AHP9(C790 AMD)",
+      "MinFirmwareVersion": "P9CN28WW"
+    },
+    {
+      "Model": "IdeaPad 5 2in1 14AHP9/IdeaPad 5 2in1 16AHP9(C590 AMD)",
+      "MinFirmwareVersion": "P1CN29WW"
+    },
+    {
+      "Model": "IdeaPad Pro 5 14AHP9(S590 pro AMD)",
+      "MinFirmwareVersion": "NBCN13WW"
+    },
+    {
+      "Model": "Yoga Pro7 14AHP9(S790 Pro AMD)",
+      "MinFirmwareVersion": "NCCN13WW"
+    },
+    {
+      "Model": "Yoga Pro 7 14ASP9",
+      "MinFirmwareVersion": "PSCN21WW"
+    },
+    {
+      "Model": "IdeaPad slim 5 14ARP10/IdeaPad slim 5 16ARP10",
+      "MinFirmwareVersion": "Q3CN13WW"
+    },
+    {
+      "Model": "IdeaPad slim 5 14AHP10/IdeaPad slim 5 16AHP10",
+      "MinFirmwareVersion": "Q4CN12WW"
+    },
+    {
+      "Model": "IdeaPad slim 5 14AKP10/IdeaPad slim 5 16AKP10",
+      "MinFirmwareVersion": "R0CN12WW"
+    },
+    {
+      "Model": "YOGA 7 2IN1 14AKP10/YOGA 7 2IN1 16AKP10",
+      "MinFirmwareVersion": "QXCN12WW"
+    },
+    {
+      "Model": "IdeaPad 5 2-in-1 14AKP10/IdeaPad 5 2-in-1 16AKP10",
+      "MinFirmwareVersion": "R4CN10WW"
+    },
+    {
+      "Model": "Legion Go S 8APU1",
+      "MinFirmwareVersion": "S0CN06WW"
+    },
+    {
+      "Model": "Legion Go S 8ARP1",
+      "MinFirmwareVersion": "QCCN16WW"
+    },
+    {
+      "Model": "IdeaPad Slim 5 14AHP10R/XiaoXin 14 AHP10R",
+      "MinFirmwareVersion": "S8CN12WW"
+    },
+    {
+      "Model": "Lenovo J13 IR",
+      "MinFirmwareVersion": "SBCN09WW"
+    },
+    {
+      "Model": "LegionGo 8ASP2",
+      "MinFirmwareVersion": "RRCN10WW"
+    },
+    {
+      "Model": "LegionGo 8AHP2",
+      "MinFirmwareVersion": "RQCN10WW"
+    },
+    {
+      "Model": "IdeaPad 5 2-in-1 14Q8X9",
+      "MinFirmwareVersion": "Q1CN10WW"
+    },
+    {
+      "Model": "ThinkSmart Core Gen 2",
+      "MinFirmwareVersion": "M5JKT12A"
+    },
+    {
+      "Model": "ThinkSmart Core Gen 2 for Logitech",
+      "MinFirmwareVersion": "M5JKT15L or M5JKT15A"
+    },
+    {
+      "Model": "ThinkSmart One/One Pro",
+      "MinFirmwareVersion": "M4QKT1BA"
+    },
+    {
+      "Model": "ThinkSmart Hub",
+      "MinFirmwareVersion": "M2XKT2AA"
+    },
+    {
+      "Model": "ThinkSmart Tiny Kit",
+      "MinFirmwareVersion": "M5MKT06A"
+    },
+    {
+      "Model": "ThinkSmart Core Gen 1",
+      "MinFirmwareVersion": "M4CKT1CA"
+    }
+  ]
+}

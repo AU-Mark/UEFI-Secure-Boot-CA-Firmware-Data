@@ -1,13 +1,18 @@
 ﻿<#
 .SYNOPSIS
-    Updates Secure Boot certificate firmware data from Dell and HP.
+    Updates Secure Boot certificate firmware data from Dell, HP, and Lenovo.
 
 .DESCRIPTION
-    Fetches the latest UEFI CA 2023 minimum firmware version data from Dell and HP
-    support pages and saves them as standardized JSON files.
+    Fetches the latest UEFI CA 2023 minimum firmware version data from Dell, HP,
+    and Lenovo support pages and saves them as standardized JSON files.
 
     Dell: Uses simple HTTP request (no bot protection)
     HP: Uses Selenium with stealth options (Akamai protection)
+    Lenovo: Uses Selenium with stealth options (Akamai protection); the HT518129
+            model tables use rowspan, which is expanded before extraction.
+
+    All three vendors produce the same flat schema:
+        { Vendor, LastUpdated, SourceUrl, RecordCount, Data: [ { Model, MinFirmwareVersion } ] }
 
 .PARAMETER OutputPath
     Path to the data folder. Defaults to ../data relative to script location.
@@ -17,6 +22,9 @@
 
 .PARAMETER SkipDell
     Skip Dell data extraction.
+
+.PARAMETER SkipLenovo
+    Skip Lenovo data extraction.
 
 .PARAMETER Verbose
     Show detailed progress information.
@@ -37,7 +45,10 @@ param(
     [switch]$SkipHP,
 
     [Parameter()]
-    [switch]$SkipDell
+    [switch]$SkipDell,
+
+    [Parameter()]
+    [switch]$SkipLenovo
 )
 
 # Add required assemblies
@@ -355,6 +366,258 @@ function Get-HPDataAlternative {
     }
 }
 
+# --- Lenovo (HT518129) -----------------------------------------------------
+# The Lenovo Secure Boot guide is a JS-rendered SPA behind Akamai, and its model
+# tables use rowspan (values 2/3/6, no colspan) on the Model and BIOS columns.
+# Rows are expanded to full width before extraction so grouped products keep
+# their shared minimum BIOS version.
+
+function Get-LnvCleanText {
+    param([string]$Html)
+    if ([string]::IsNullOrEmpty($Html)) { return '' }
+    $text = [regex]::Replace($Html, '(?s)<[^>]+>', ' ')
+    $text = [System.Net.WebUtility]::HtmlDecode($text)
+    $text = $text -replace ([char]0x00A0), ' '
+    $text = $text -replace '\s+', ' '
+    return $text.Trim()
+}
+
+function Expand-LnvTableRows {
+    <#
+    .SYNOPSIS
+        Returns a table's rows with rowspans expanded so every logical row has a
+        full set of cells. Column count is taken from the header (first) row.
+    #>
+    param([string]$TableHtml)
+
+    $rawRows = [regex]::Matches($TableHtml, '(?is)<tr\b.*?</tr>')
+    if ($rawRows.Count -eq 0) { return @() }
+
+    $colCount = ([regex]::Matches($rawRows[0].Value, '(?is)<(t[dh])\b[^>]*>(.*?)</\1>')).Count
+    if ($colCount -lt 1) { $colCount = 3 }
+
+    $carryCell = [object[]]::new($colCount)
+    $carryRem  = [int[]]::new($colCount)
+
+    $rows = [System.Collections.Generic.List[object]]::new()
+    foreach ($raw in $rawRows) {
+        $explicit = [regex]::Matches($raw.Value, '(?is)<(t[dh])\b([^>]*)>(.*?)</\1>')
+        $ei = 0
+        $row = [object[]]::new($colCount)
+        for ($col = 0; $col -lt $colCount; $col++) {
+            if ($carryRem[$col] -gt 0) {
+                $row[$col] = $carryCell[$col]
+                $carryRem[$col] = $carryRem[$col] - 1
+            }
+            elseif ($ei -lt $explicit.Count) {
+                $m = $explicit[$ei]; $ei++
+                $cell = [PSCustomObject]@{
+                    Tag  = $m.Groups[1].Value.ToLower()
+                    Text = (Get-LnvCleanText $m.Groups[3].Value)
+                }
+                $row[$col] = $cell
+                $rs = [regex]::Match($m.Groups[2].Value, '(?i)rowspan\s*=\s*"?(\d+)')
+                if ($rs.Success -and [int]$rs.Groups[1].Value -gt 1) {
+                    $carryCell[$col] = $cell
+                    $carryRem[$col]  = [int]$rs.Groups[1].Value - 1
+                }
+            }
+            else {
+                $row[$col] = [PSCustomObject]@{ Tag = 'td'; Text = '' }
+            }
+        }
+        $rows.Add($row)
+    }
+    return $rows
+}
+
+function Format-LnvModelName {
+    <#
+    .SYNOPSIS
+        Builds a full Lenovo model name, prefixing the product family only when
+        the product does not already start with a known Lenovo brand.
+
+    .DESCRIPTION
+        Lenovo's anchors are product *categories*, not brands: the ideacentre
+        table also lists LOQ and Legion desktops, and the WinBook table lists
+        "Lenovo 100W/500W" education laptops. So prefixing by table family is
+        wrong when the product already names a Lenovo line. Only genuinely
+        brand-less rows (the bare ThinkPad models like "E14 Gen 1") get a prefix.
+    #>
+    param([string]$Family, [string]$Product)
+
+    $p = $Product.Trim()
+    if (-not $p) { return '' }
+
+    # If the product already starts with a known Lenovo brand, keep it as-is.
+    $brands = @('ThinkPad','ThinkStation','ThinkCentre','ThinkBook','ThinkSmart',
+                'ThinkEdge','IdeaCentre','IdeaPad','Legion','Yoga','Lenovo','LOQ','WinBook')
+    foreach ($b in $brands) {
+        if ($p -match ('^(?i)' + [regex]::Escape($b))) { return $p }
+    }
+
+    # Brand-less product: prefix the family display name (skip combined anchors).
+    if ($Family -match ',') { return $p }
+    $display = @{
+        'thinkpad'     = 'ThinkPad'
+        'thinkstation' = 'ThinkStation'
+        'thinkcentre'  = 'ThinkCentre'
+        'thinkbook'    = 'ThinkBook'
+        'winbook'      = 'WinBook'
+        'thinksmart'   = 'ThinkSmart'
+        'ideacentre'   = 'IdeaCentre'
+    }
+    $key = $Family.Trim().ToLower()
+    if ($display.ContainsKey($key)) { return "$($display[$key]) $p" }
+    return $p
+}
+
+function ConvertFrom-LenovoHtml {
+    <#
+    .SYNOPSIS
+        Parses HT518129 page HTML into flat { Model, MinFirmwareVersion } records.
+
+    .DESCRIPTION
+        Walks every <table> (rowspans expanded first), skips the certificate
+        cross-reference table, and for each model table emits one record per row.
+        The product family comes from the nearest preceding <a id name> anchor.
+    #>
+    param([string]$Html)
+
+    $anchors = [System.Collections.Generic.List[object]]::new()
+    foreach ($m in [regex]::Matches($Html, '(?is)<a\b(?=[^>]*\bid="([^"]+)")(?=[^>]*\bname=")[^>]*>(.*?)</a>')) {
+        $anchors.Add([PSCustomObject]@{ Index = $m.Index; Text = (Get-LnvCleanText $m.Groups[2].Value) })
+    }
+
+    $records = [System.Collections.Generic.List[object]]::new()
+
+    foreach ($tableMatch in [regex]::Matches($Html, '(?is)<table\b.*?</table>')) {
+        $rows = Expand-LnvTableRows $tableMatch.Value
+        if ($rows.Count -eq 0) { continue }
+
+        $headerText = (($rows[0] | ForEach-Object { $_.Text }) -join ' | ')
+        if ($headerText -match 'Expiring\s+Certificate') { continue }
+        if (-not ($headerText -match 'Product' -and $headerText -match 'Model')) { continue }
+
+        # Family from nearest preceding anchor.
+        $family = 'Unknown'; $best = -1
+        foreach ($a in $anchors) {
+            if ($a.Index -lt $tableMatch.Index -and $a.Index -gt $best) { $best = $a.Index; $family = $a.Text }
+        }
+
+        for ($i = 0; $i -lt $rows.Count; $i++) {
+            $c = $rows[$i]
+            if ($c.Count -lt 3) { continue }
+            if ($c[0].Tag -eq 'th' -or $c[0].Text -eq 'Product' -or $c[1].Text -eq 'Model') { continue }
+
+            $product = $c[0].Text
+            $minBios = $c[2].Text
+            if (-not $product -or -not $minBios) { continue }
+
+            $records.Add([PSCustomObject]@{
+                Model              = (Format-LnvModelName -Family $family -Product $product)
+                MinFirmwareVersion = $minBios
+            })
+        }
+    }
+
+    return $records
+}
+
+function Get-LenovoDataSelenium {
+    <#
+    .SYNOPSIS
+        Fetches Lenovo Secure Boot model data using Selenium (Akamai bypass).
+    #>
+    param([string]$Url)
+
+    Write-Host "[Lenovo] Fetching data using Selenium..." -ForegroundColor Cyan
+    Write-Host "[Lenovo] URL: $Url" -ForegroundColor Gray
+
+    $seleniumModule = Get-Module -ListAvailable -Name Selenium | Select-Object -First 1
+    if (-not $seleniumModule) {
+        Write-Warning "[Lenovo] Selenium module not found. Skipping."
+        return $null
+    }
+
+    $assembliesPath = Join-Path $seleniumModule.ModuleBase "assemblies"
+    $webDriverDll = Join-Path $assembliesPath "WebDriver.dll"
+    if (-not (Test-Path $webDriverDll)) {
+        Write-Warning "[Lenovo] WebDriver.dll not found. Skipping."
+        return $null
+    }
+
+    if (-not ([System.AppDomain]::CurrentDomain.GetAssemblies() | Where-Object { $_.GetName().Name -eq "WebDriver" })) {
+        Add-Type -Path $webDriverDll -ErrorAction Stop
+    }
+
+    $driver = $null
+    try {
+        $chromeOptions = New-Object OpenQA.Selenium.Chrome.ChromeOptions
+        $chromeOptions.AddExcludedArgument("enable-automation")
+        $chromeOptions.AddArgument("--disable-blink-features=AutomationControlled")
+        $chromeOptions.AddArgument("--disable-extensions")
+        $chromeOptions.AddArgument("--disable-http2")
+        $chromeOptions.AddArgument("--no-sandbox")
+        $chromeOptions.AddArgument("--disable-dev-shm-usage")
+        $chromeOptions.AddArgument("--disable-gpu")
+        $chromeOptions.AddArgument("--disable-infobars")
+        $chromeOptions.AddArgument("--disable-notifications")
+        $chromeOptions.AddArgument("--disable-popup-blocking")
+        $chromeOptions.AddArgument("--window-size=1920,1080")
+        $chromeOptions.AddArgument("--start-maximized")
+        $chromeOptions.AddArgument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36")
+        $chromeOptions.AddArgument("--lang=en-US")
+        $chromeOptions.AddArgument("--headless=new")
+        $chromeOptions.AddArgument("--log-level=3")
+        $chromeOptions.AddArgument("--silent")
+
+        $chromeService = [OpenQA.Selenium.Chrome.ChromeDriverService]::CreateDefaultService($assembliesPath)
+        $chromeService.HideCommandPromptWindow = $true
+        $chromeService.SuppressInitialDiagnosticInformation = $true
+
+        Write-Host "[Lenovo] Starting Chrome..." -ForegroundColor Cyan
+        $driver = New-Object OpenQA.Selenium.Chrome.ChromeDriver($chromeService, $chromeOptions)
+        $driver.Manage().Timeouts().PageLoad = [TimeSpan]::FromSeconds(60)
+
+        Write-Host "[Lenovo] Navigating to page..." -ForegroundColor Cyan
+        $driver.Navigate().GoToUrl($Url)
+
+        # Model tables load asynchronously after the SPA shell.
+        $deadline = (Get-Date).AddSeconds(40)
+        $tableCount = 0
+        while ((Get-Date) -lt $deadline) {
+            Start-Sleep -Seconds 2
+            $tableCount = $driver.FindElements([OpenQA.Selenium.By]::TagName('table')).Count
+            if ($tableCount -gt 0) { break }
+        }
+
+        Write-Host "[Lenovo] Page loaded: $($driver.Title)" -ForegroundColor Green
+        Write-Host "[Lenovo] Tables rendered: $tableCount" -ForegroundColor Green
+
+        $html = $driver.PageSource
+
+        if ($html -match "Access Denied|Pardon the interruption|Request unsuccessful") {
+            throw "Page returned a bot-protection / access-denied response."
+        }
+        if ($tableCount -eq 0) {
+            throw "No tables rendered before timeout."
+        }
+
+        $records = ConvertFrom-LenovoHtml -Html $html
+        Write-Host "[Lenovo] Extracted $($records.Count) records" -ForegroundColor Green
+        return $records
+
+    } catch {
+        Write-Error "[Lenovo] Selenium failed: $_"
+        return $null
+    } finally {
+        if ($driver) {
+            try { $driver.Quit() } catch { }
+        }
+    }
+}
+
 #endregion
 
 #region Main Execution
@@ -369,6 +632,7 @@ Write-Host ""
 $results = @{
     Dell = $null
     HP = $null
+    Lenovo = $null
 }
 
 # Fetch Dell data
@@ -420,14 +684,40 @@ if (-not $SkipHP) {
 }
 
 Write-Host ""
+
+# Fetch Lenovo data
+if (-not $SkipLenovo) {
+    $lenovoUrl = 'https://support.lenovo.com/us/en/solutions/ht518129'
+    $lenovoData = Get-LenovoDataSelenium -Url $lenovoUrl
+
+    if ($lenovoData -and $lenovoData.Count -gt 0) {
+        $lenovoJson = [PSCustomObject]@{
+            Vendor = "Lenovo"
+            LastUpdated = $timestamp
+            SourceUrl = $lenovoUrl
+            RecordCount = $lenovoData.Count
+            Data = $lenovoData
+        }
+
+        $lenovoPath = Join-Path $OutputPath "Lenovo.json"
+        $lenovoJson | ConvertTo-Json -Depth 10 | Out-File -FilePath $lenovoPath -Encoding UTF8
+        Write-Host "[Lenovo] Saved to: $lenovoPath" -ForegroundColor Green
+        $results.Lenovo = $lenovoData.Count
+    } else {
+        Write-Warning "[Lenovo] No data extracted"
+    }
+}
+
+Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "Summary:" -ForegroundColor Cyan
 Write-Host "  Dell records: $(if ($results.Dell) { $results.Dell } else { 'FAILED' })" -ForegroundColor $(if ($results.Dell) { 'Green' } else { 'Red' })
 Write-Host "  HP records: $(if ($results.HP) { $results.HP } else { 'FAILED' })" -ForegroundColor $(if ($results.HP) { 'Green' } else { 'Red' })
+Write-Host "  Lenovo records: $(if ($results.Lenovo) { $results.Lenovo } else { 'FAILED' })" -ForegroundColor $(if ($results.Lenovo) { 'Green' } else { 'Red' })
 Write-Host "========================================" -ForegroundColor Cyan
 
 # Return success/failure for CI/CD
-if ($results.Dell -gt 0 -or $results.HP -gt 0) {
+if ($results.Dell -gt 0 -or $results.HP -gt 0 -or $results.Lenovo -gt 0) {
     exit 0
 } else {
     exit 1
