@@ -1,8 +1,8 @@
 {
   "Vendor": "Lenovo",
-  "LastUpdated": "2026-08-26T06:36:26Z",
+  "LastUpdated": "2026-08-27T17:12:34Z",
   "SourceUrl": "https://support.lenovo.com/us/en/solutions/ht518129",
-  "RecordCount": 495,
+  "RecordCount": 494,
   "Data": [
     {
       "Model": "ThinkPad 11e 5th Gen",
@@ -1635,10 +1635,6 @@
     {
       "Model": "IdeaPad 5 14/16ABR8/ S580",
       "MinFirmwareVersion": "L9CN32WW"
-    },
-    {
-      "Model": "LOQ 15APH8/LOQ 16APH8",
-      "MinFirmwareVersion": "LYCN48WW"
     },
     {
       "Model": "Legion Slim 5 16APH8",
