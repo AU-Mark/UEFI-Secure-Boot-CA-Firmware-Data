@@ -14,6 +14,10 @@
     All three vendors produce the same flat schema:
         { Vendor, LastUpdated, SourceUrl, RecordCount, Data: [ { Model, MinFirmwareVersion } ] }
 
+    HP entries carry an additional Source property: 'Page' for a model listed on the HP page in
+    this run, 'CarriedForward' for one absent from the page that keeps its last published minimum
+    version. Consumers that read only Model and MinFirmwareVersion are unaffected.
+
 .PARAMETER OutputPath
     Path to the data folder. Defaults to ../data relative to script location.
 
@@ -132,6 +136,110 @@ function ConvertFrom-HtmlTable {
     }
 
     return $results
+}
+
+function Get-ModelMatchKey {
+    <#
+    .SYNOPSIS
+        Builds a comparison key for a model name.
+
+    .DESCRIPTION
+        Lowercases the name and drops the words vendors add or omit between page revisions (HP,
+        inch, mobile, workstation, PC, notebook, laptop, desktop, computer, thin, client, system),
+        so "HP Elite t755 Thin Client" and "HP Elite t755" produce the same key. The consumer
+        normalizes names the same way when matching a system against the data.
+
+    .PARAMETER Name
+        The model name to reduce to a key.
+
+    .PARAMETER IgnoreSize
+        Also drops screen-size numbers from 10 to 40, so "EliteOne 870 27.8 inch G9" and
+        "EliteOne 870 27 G9" produce the same key.
+    #>
+    param(
+        [string]$Name,
+        [switch]$IgnoreSize
+    )
+
+    $noise = @('hp', 'inch', 'mobile', 'workstation', 'pc', 'notebook', 'laptop', 'desktop',
+        'computer', 'thin', 'client', 'clinet', 'system')
+
+    $tokens = @(($Name.ToLower() -replace '[\(\),/]', ' ') -split '\s+' |
+        ForEach-Object { $_.Trim('-', '.') } |
+        Where-Object { $_ -and $noise -notcontains $_ })
+
+    if ($IgnoreSize) {
+        $tokens = @($tokens | Where-Object { -not ($_ -match '^\d+(\.\d+)?$' -and [double]$_ -ge 10 -and [double]$_ -le 40) })
+    }
+
+    return ($tokens -join ' ')
+}
+
+function Get-HPCarriedForwardEntries {
+    <#
+    .SYNOPSIS
+        Returns entries from an existing HP.json whose model is absent from the current page data.
+
+    .DESCRIPTION
+        HP drops models from its page, typically ones that ship with the 2023 certificates already
+        in firmware. Those entries keep their last published minimum version here, marked with
+        Source 'CarriedForward', so an endpoint running one still resolves to a known minimum
+        instead of reporting an unknown model.
+
+        Models are compared by Get-ModelMatchKey, so a model HP renamed is represented once, by its
+        current page entry, rather than twice under both spellings.
+
+    .PARAMETER ExistingPath
+        Path to the HP.json written by a previous run. A missing or unreadable file carries nothing.
+
+    .PARAMETER CurrentData
+        The entries extracted from the page in this run.
+
+    .OUTPUTS
+        Array of PSCustomObject with Model, MinFirmwareVersion and Source.
+    #>
+    param(
+        [string]$ExistingPath,
+        [object[]]$CurrentData
+    )
+
+    if (-not (Test-Path $ExistingPath)) { return @() }
+
+    try {
+        $existing = Get-Content $ExistingPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    } catch {
+        Write-Warning "[HP] Existing HP.json could not be read, carrying nothing forward: $_"
+        return @()
+    }
+
+    # Page keys are held in both forms so an entry the page now lists under a different screen-size
+    # spelling is represented once, by the page entry with its current minimum version.
+    $pageKeys = New-Object 'System.Collections.Generic.HashSet[string]'
+    $pageKeysNoSize = New-Object 'System.Collections.Generic.HashSet[string]'
+    foreach ($entry in $CurrentData) {
+        $null = $pageKeys.Add((Get-ModelMatchKey -Name $entry.Model))
+        $null = $pageKeysNoSize.Add((Get-ModelMatchKey -Name $entry.Model -IgnoreSize))
+    }
+
+    $carriedKeys = New-Object 'System.Collections.Generic.HashSet[string]'
+    $carried = @()
+    foreach ($entry in @($existing.Data)) {
+        if (-not $entry.Model) { continue }
+        $key = Get-ModelMatchKey -Name $entry.Model
+        if ($pageKeys.Contains($key)) { continue }
+        if ($pageKeysNoSize.Contains((Get-ModelMatchKey -Name $entry.Model -IgnoreSize))) { continue }
+        if ($carriedKeys.Contains($key)) { continue }
+        $null = $carriedKeys.Add($key)
+        $carried += [PSCustomObject]@{
+            Model              = $entry.Model
+            MinFirmwareVersion = $entry.MinFirmwareVersion
+            Source             = 'CarriedForward'
+        }
+    }
+
+    # Emitted as individual entries: the caller collects them with @(), which would see a
+    # comma-wrapped array as one element.
+    return $carried
 }
 
 function Get-DellData {
@@ -293,8 +401,10 @@ function Get-HPDataSelenium {
 
             if ($rowCount -lt 3) { continue }
 
-            # Check for HP model patterns
-            if ($tableHtml -notmatch 'EliteBook|ProBook|ZBook|HP \d|EliteDesk|ProDesk|Engage|Product Name') { continue }
+            # Firmware tables are identified by their Minimum BIOS Version column, not by product
+            # family names, so every platform table on the page qualifies (EliteBook, Z workstations,
+            # Elite Slice, thin clients and any family HP adds).
+            if ($tableHtml -notmatch 'Minimum BIOS Version') { continue }
 
             $tableData = ConvertFrom-HtmlTable -Html $tableHtml
 
@@ -302,8 +412,10 @@ function Get-HPDataSelenium {
                 $model = $null
                 $version = $null
 
-                # HP uses different column names
-                if ($row.'Product Name') { $model = $row.'Product Name' }
+                # The model column is headed 'Platform Name' on the current page; 'Product Name' is
+                # accepted as well.
+                if ($row.'Platform Name') { $model = $row.'Platform Name' }
+                elseif ($row.'Product Name') { $model = $row.'Product Name' }
                 if ($row.'Minimum BIOS Version') { $version = $row.'Minimum BIOS Version' }
 
                 # Skip TBD entries
@@ -748,18 +860,34 @@ if (-not $SkipHP) {
     $hpData = Get-HPDataSelenium -Url $hpUrl
 
     if ($hpData -and $hpData.Count -gt 0) {
+        $hpPath = Join-Path $OutputPath "HP.json"
+
+        $hpRecords = [System.Collections.Generic.List[object]]::new()
+        foreach ($entry in $hpData) {
+            $hpRecords.Add([PSCustomObject]@{
+                Model              = $entry.Model
+                MinFirmwareVersion = $entry.MinFirmwareVersion
+                Source             = 'Page'
+            })
+        }
+
+        # Entries for models absent from the page follow the page entries, so a consumer that keeps
+        # the first match of equal quality takes the current one.
+        $hpCarried = @(Get-HPCarriedForwardEntries -ExistingPath $hpPath -CurrentData $hpData)
+        foreach ($entry in $hpCarried) { $hpRecords.Add($entry) }
+        Write-Host "[HP] Carried forward $($hpCarried.Count) entries for models absent from the page" -ForegroundColor Gray
+
         $hpJson = [PSCustomObject]@{
             Vendor = "HP"
             LastUpdated = $timestamp
             SourceUrl = $hpUrl
-            RecordCount = $hpData.Count
-            Data = $hpData
+            RecordCount = $hpRecords.Count
+            Data = $hpRecords
         }
 
-        $hpPath = Join-Path $OutputPath "HP.json"
         $hpJson | ConvertTo-Json -Depth 10 | Out-File -FilePath $hpPath -Encoding UTF8
-        Write-Host "[HP] Saved to: $hpPath" -ForegroundColor Green
-        $results.HP = $hpData.Count
+        Write-Host "[HP] Saved to: $hpPath ($($hpData.Count) from page, $($hpCarried.Count) carried forward)" -ForegroundColor Green
+        $results.HP = $hpRecords.Count
     } else {
         Write-Warning "[HP] No data extracted"
     }
@@ -799,11 +927,18 @@ Write-Host "  Lenovo records: $(if ($results.Lenovo) { $results.Lenovo } else { 
 Write-Host "  Dell out-of-scope: $(if ($results.DellOutOfScope) { $results.DellOutOfScope } else { 'FAILED' })" -ForegroundColor $(if ($results.DellOutOfScope) { 'Green' } else { 'Yellow' })
 Write-Host "========================================" -ForegroundColor Cyan
 
-# Return success/failure for CI/CD
-if ($results.Dell -gt 0 -or $results.HP -gt 0 -or $results.Lenovo -gt 0) {
-    exit 0
-} else {
+# Exit code for CI/CD. 0 when every vendor that was not skipped extracted records. 1 when any of them
+# extracted none; files for the vendors that succeeded are still written. The Dell out-of-scope list
+# is supplementary and does not affect the exit code.
+$failedVendors = @()
+if (-not $SkipDell -and -not $results.Dell) { $failedVendors += 'Dell' }
+if (-not $SkipHP -and -not $results.HP) { $failedVendors += 'HP' }
+if (-not $SkipLenovo -and -not $results.Lenovo) { $failedVendors += 'Lenovo' }
+
+if ($failedVendors.Count -gt 0) {
+    Write-Warning "Vendor extraction failed: $($failedVendors -join ', ')"
     exit 1
 }
+exit 0
 
 #endregion

@@ -80,6 +80,7 @@ jobs:
           }
 
       - name: Run Update Script
+        id: update
         shell: pwsh
         run: |
           Set-Location $env:GITHUB_WORKSPACE
@@ -191,3 +192,12 @@ jobs:
           if ("${{ steps.validate.outputs.valid }}" -eq "False") {
             Write-Host "WARNING: Data validation failed. Check logs."
           }
+
+      # The update step continues on error so vendors that succeeded are still committed. This step
+      # then fails the run, so a vendor that extracted no records shows as a failed workflow.
+      - name: Fail on Vendor Extraction Failure
+        if: steps.update.outcome == 'failure'
+        shell: pwsh
+        run: |
+          Write-Host "::error::One or more vendors extracted no records. See the Run Update Script step output."
+          exit 1

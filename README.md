@@ -39,6 +39,21 @@ All vendors share the same flat schema:
 }
 ```
 
+HP entries carry one extra property, `Source`:
+
+```json
+{
+  "Model": "HP EliteBook 6 G1a 14 inch AI",
+  "MinFirmwareVersion": "01.02.01",
+  "Source": "CarriedForward"
+}
+```
+
+`Page` marks a model listed on HP's page in the run that wrote the file. `CarriedForward` marks one
+absent from the page, keeping the minimum version last published for it, so an endpoint running that
+model still resolves to a known minimum. A model HP renamed is present once, under its page name.
+Consumers that read `Model` and `MinFirmwareVersion` need no change.
+
 `DellOutOfScope.json` is a list of models Dell will NOT update, so it has no
 firmware versions - a flat `Models` array instead of `Data`:
 
