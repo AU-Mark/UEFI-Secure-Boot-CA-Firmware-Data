@@ -306,7 +306,7 @@ function Get-DellData {
         return $allData
 
     } catch {
-        Write-Error "[Dell] Failed to fetch data: $_"
+        Write-Warning "[Dell] Failed to fetch data: $_"
         return $null
     }
 }
@@ -372,7 +372,8 @@ function Get-HPDataSelenium {
         $chromeService.SuppressInitialDiagnosticInformation = $true
 
         Write-Host "[HP] Starting Chrome..." -ForegroundColor Cyan
-        $driver = New-Object OpenQA.Selenium.Chrome.ChromeDriver($chromeService, $chromeOptions)
+        # Command timeout exceeds the 60 s page-load timeout so ChromeDriver's own timeout error reaches the catch
+        $driver = New-Object OpenQA.Selenium.Chrome.ChromeDriver($chromeService, $chromeOptions, [TimeSpan]::FromSeconds(120))
         $driver.Manage().Timeouts().PageLoad = [TimeSpan]::FromSeconds(60)
 
         Write-Host "[HP] Navigating to page..." -ForegroundColor Cyan
@@ -432,7 +433,7 @@ function Get-HPDataSelenium {
         return $allData
 
     } catch {
-        Write-Error "[HP] Selenium failed: $_"
+        Write-Warning "[HP] Selenium failed: $_"
         Write-Host "[HP] Trying alternative method..." -ForegroundColor Yellow
         return Get-HPDataAlternative -Url $Url
     } finally {
@@ -473,7 +474,7 @@ function Get-HPDataAlternative {
         return $null
 
     } catch {
-        Write-Error "[HP] Alternative method failed: $_"
+        Write-Warning "[HP] Alternative method failed: $_"
         return $null
     }
 }
@@ -689,7 +690,8 @@ function Get-LenovoDataSelenium {
         $chromeService.SuppressInitialDiagnosticInformation = $true
 
         Write-Host "[Lenovo] Starting Chrome..." -ForegroundColor Cyan
-        $driver = New-Object OpenQA.Selenium.Chrome.ChromeDriver($chromeService, $chromeOptions)
+        # Command timeout exceeds the 60 s page-load timeout so ChromeDriver's own timeout error reaches the catch
+        $driver = New-Object OpenQA.Selenium.Chrome.ChromeDriver($chromeService, $chromeOptions, [TimeSpan]::FromSeconds(120))
         $driver.Manage().Timeouts().PageLoad = [TimeSpan]::FromSeconds(60)
 
         Write-Host "[Lenovo] Navigating to page..." -ForegroundColor Cyan
@@ -721,7 +723,7 @@ function Get-LenovoDataSelenium {
         return $records
 
     } catch {
-        Write-Error "[Lenovo] Selenium failed: $_"
+        Write-Warning "[Lenovo] Selenium failed: $_"
         return $null
     } finally {
         if ($driver) {
@@ -784,7 +786,7 @@ function Get-DellOutOfScopeData {
         return ,$models
 
     } catch {
-        Write-Error "[Dell-OOS] Failed to fetch out-of-scope data: $_"
+        Write-Warning "[Dell-OOS] Failed to fetch out-of-scope data: $_"
         return $null
     }
 }
